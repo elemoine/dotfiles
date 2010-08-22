@@ -1,0 +1,8 @@
+[user]
+	name = Éric Lemoine
+	email = eric.lemoine@gmail.com
+[color]
+    status = auto
+    diff = auto
+[merge]
+	tool = vimdiff

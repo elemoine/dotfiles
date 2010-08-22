@@ -1,0 +1,10 @@
+[ui]
+username = Éric Lemoine <eric.lemoine@gmail.com>
+
+[diff]
+git = 1
+
+[extensions]
+hgext.mq =
+hgext.purge =
+hgext.qimportbz = /home/elemoine/src/qimportbz
