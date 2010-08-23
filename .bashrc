@@ -119,5 +119,8 @@ function ag () {
     ack-grep $1
 }
 
-export WORKON=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]
+then
+    export WORKON=~/.virtualenvs
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
