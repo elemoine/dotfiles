@@ -115,10 +115,6 @@ function svnadd () {
     done
 }
 
-function ag () {
-    ack-grep $1
-}
-
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]
 then
     export WORKON=~/.virtualenvs
