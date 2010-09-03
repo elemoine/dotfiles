@@ -6,3 +6,5 @@
     diff = auto
 [merge]
 	tool = vimdiff
+[alias]
+    addremove = !git add . && git ls-files --deleted | xargs --no-run-if-empty git rm
