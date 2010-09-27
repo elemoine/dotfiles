@@ -100,6 +100,7 @@ export PS1
 alias pc22='ssh camptocamp@c2cpc22.camptocamp.com'
 alias hbs='ssh TI\\elemoine@195.68.124.82'
 alias cdc='ssh cdc-geodecisionnel-demo.dmz.lsn'
+alias t='python ~/src/t/t.py --task-dir ~/tasks --list tasks'
 
 function svndiff () {
     if [ "$1" != "" ]; then
@@ -120,3 +121,4 @@ then
     export WORKON=~/.virtualenvs
     source /usr/local/bin/virtualenvwrapper.sh
 fi
+
