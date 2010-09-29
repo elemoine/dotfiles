@@ -1,3 +1,6 @@
+" docs
+" NERDCommander http://www.vim.org/scripts/script.php?script_id=1218
+
 " pathogen
 filetype off
 call pathogen#runtime_append_all_bundles()
@@ -47,7 +50,7 @@ set incsearch
 set showmatch
 set hlsearch
 
-" leader(\)+space to clear out search
+" leader(,)+space to clear out search
 nnoremap <leader><space> :noh<cr>
 
 " handle long lines
@@ -59,7 +62,12 @@ set formatoptions=qrn1
 
 " use the leader
 nnoremap <leader>a :Ack
+map <leader>ew :e <C-R>=expand("%:p:h")."/"<CR>
+map <leader>es :sp <C-R>=expand("%:p:h")."/"<CR>
+map <leader>ev :vsp <C-R>=expand("%:p:h")."/"<CR>
+map <leader>et :tabe <C-R>=expand("%:p:h")."/"<CR>
 
+" old stuff
 map ** {!} par 70j<CR>
 map *o {!} par 67j<CR>:/./,/^$/s/^/   /<CR>xx{jR o<ESC>
 map *- {!} par 67j<CR>:/./,/^$/s/^/    /<CR>xx{jR  -<ESC>
