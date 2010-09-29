@@ -110,9 +110,12 @@ function svndiff () {
     fi
 }
 
-function svnadd () {
+function svnaddremove () {
     for f in $(svn status | grep '^\?' | nawk '{print $2}'); do
         svn add $f;
+    done
+    for f in $(svn status | grep '^\!' | nawk '{print $2}'); do
+        svn rm $f;
     done
 }
 
