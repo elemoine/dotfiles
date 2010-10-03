@@ -1,0 +1,17 @@
+HISTFILE=~/.zsh/.history
+export HOSTFILE
+
+HISTSIZE=1000
+export HISTSIZE
+
+SAVEHIST=1000
+export SAVEHIST
+
+LANG=en_US.UTF-8
+export LANG
+
+LC_CTYPE=en_US.UTF-8
+export LC_CTYPE
+
+PYTHONSTARTUP=${HOME}/.pythonrc.py
+export PYTHONSTARTUP
