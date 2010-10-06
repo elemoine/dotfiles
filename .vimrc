@@ -1,5 +1,13 @@
 " docs
 " NERDCommander http://www.vim.org/scripts/script.php?script_id=1218
+"
+" CTRL-B Page up
+" CTRL-F Page down
+" CTRL-U Half page up
+" CTRL-D Half page down
+"
+" CTRL-W w Move cursor to window below/right of the current one
+" CTRL-w R Rotage windows
 
 " pathogen
 filetype off
