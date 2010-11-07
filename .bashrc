@@ -86,6 +86,8 @@ alias sS='screen -S'
 alias sls='screen -ls'
 alias sdr='screen -dr'
 
+alias t='python ~/src/t/t.py --task-dir ~/tasks --list tasks'
+
 LANG=en_US.UTF-8
 export LANG
 
@@ -103,11 +105,6 @@ GIT_PS1_SHOWUPSTREAM="verbose"
 #PS1='[\[\033[1;35m\]\W$(__git_ps1 " \[\033[1;34m\](%s)")\[\033[0m\]]\$ '
 PS1='[\h \[\033[1;35m\]\W$(__git_ps1 " \[\033[1;34m\](%s)")\[\033[0m\]]\$ '
 export PS1
-
-alias pc22='ssh camptocamp@c2cpc22.camptocamp.com'
-alias hbs='ssh TI\\elemoine@195.68.124.82'
-alias cdc='ssh cdc-geodecisionnel-demo.dmz.lsn'
-alias t='python ~/src/t/t.py --task-dir ~/tasks --list tasks'
 
 function svndiff () {
     if [ "$1" != "" ]; then
@@ -131,4 +128,3 @@ then
     export WORKON=~/.virtualenvs
     source /usr/local/bin/virtualenvwrapper.sh
 fi
-
