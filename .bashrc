@@ -73,10 +73,11 @@ fi
 
 # My stuff starts here [EL]
 
+source ${HOME}/.git-completion.bash
+
 export PYTHONSTARTUP=${HOME}/.pythonrc.py
 export PATH=${PATH}:${HOME}/scripts
 
-# some nice aliases
 alias l='ls --color -l'
 alias a='l -a'
 
@@ -94,7 +95,13 @@ export LC_CTYPE
 EDITOR=vim
 export EDITOR
 
-PS1="\[\033[1;30m\][\[\033[1;34m\]\u\[\033[1;30m\]@\[\033[0;35m\]\h\[\033[1;30m\]] \[\033[0;37m\]\W \[\033[1;30m\]\$\[\033[0m\] "
+#PS1="\[\033[1;30m\][\[\033[1;34m\]\u\[\033[1;30m\]@\[\033[0;35m\]\h\[\033[1;30m\]] \[\033[0;37m\]\W \[\033[1;30m\]\$\[\033[0m\] "
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWSTASHSTATE=1
+GIT_PS1_SHOWUPSTREAM="verbose"
+#PS1='[\[\033[1;35m\]\W$(__git_ps1 " \[\033[1;34m\](%s)")\[\033[0m\]]\$ '
+PS1='[\h \[\033[1;35m\]\W$(__git_ps1 " \[\033[1;34m\](%s)")\[\033[0m\]]\$ '
 export PS1
 
 alias pc22='ssh camptocamp@c2cpc22.camptocamp.com'
