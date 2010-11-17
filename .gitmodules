@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/bufexplorer"]
 	path = .vim/bundle/bufexplorer
 	url = http://github.com/markabe/bufexplorer.git
+[submodule ".vim/bundle/yankring"]
+	path = .vim/bundle/yankring
+	url = https://github.com/vim-scripts/YankRing.vim.git
