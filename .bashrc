@@ -106,6 +106,9 @@ GIT_PS1_SHOWUPSTREAM="verbose"
 PS1='[\h \[\033[1;35m\]\W$(__git_ps1 " \[\033[1;34m\](%s)")\[\033[0m\]]\$ '
 export PS1
 
+LESS="-RXF"
+export LESS
+
 function svndiff () {
     if [ "$1" != "" ]; then
         svn diff $@ | colordiff;
