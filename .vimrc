@@ -70,6 +70,7 @@ set formatoptions=qrn1
 
 " use the leader
 nnoremap <leader>a :Ack
+nnoremap <leader>* "zyiw:Ack <c-r>z<CR>
 map <leader>ew :e <C-R>=expand("%:p:h")."/"<CR>
 map <leader>es :sp <C-R>=expand("%:p:h")."/"<CR>
 map <leader>ev :vsp <C-R>=expand("%:p:h")."/"<CR>
