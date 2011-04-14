@@ -126,9 +126,3 @@ function svnaddremove () {
         svn rm $f;
     done
 }
-
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]
-then
-    export WORKON=~/.virtualenvs
-    source /usr/local/bin/virtualenvwrapper.sh
-fi
