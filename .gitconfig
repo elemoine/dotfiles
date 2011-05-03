@@ -1,3 +1,5 @@
+[core]
+    excludesfile = "~/.gitignore_"
 [user]
 	name = Éric Lemoine
 	email = eric.lemoine@gmail.com
