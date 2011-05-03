@@ -49,8 +49,9 @@ layouts =
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {
-    names = { "term", "www", "im", 4, 5},
-    layouts = { layouts[2], layouts[2], layouts[2], layouts[2], layouts[2] }
+    names = { "term", "www", "im", "erp", "office", 5},
+    layouts = { layouts[2], layouts[2], layouts[2], layouts[2], layouts[2],
+                layouts[2] }
     }
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
@@ -353,7 +354,12 @@ awful.rules.rules = {
     { rule = { class = "xchat-gnome" },
       properties = { tag = tags[screen.count()][3] } },
     { rule = { class = "Pidgin" },
-      properties = { tag = tags[screen.count()][3] } }
+      properties = { tag = tags[screen.count()][3] } },
+    -- Set openerp to always map on tag number 3.
+    { rule = { class = "Tinyerp-client.py" },
+      properties = { tag = tags[screen.count()][4] } },
+    { rule = { class = "OpenOffice.org 3.2" },
+      properties = { tag = tags[screen.count()][5] } }
 }
 -- }}}
 
