@@ -345,12 +345,15 @@ awful.rules.rules = {
     { rule = { class = "pinentry" },
       properties = { floating = true } },
     { rule = { class = "gimp" },
-      properties = { floating = true } }
+      properties = { floating = true } },
     -- Set FireFox to always map on tags number 2 of screen 1.
-    --{ rule = { class = "Firefox" }, properties = { tag = tags[1][2] } },
+    { rule = { class = "Firefox" },
+      properties = { tag = tags[screen.count()][2] } },
     -- Set im tools to always map on tags number 3 of screen 2.
-    --{ rule = { class = "xchat-gnome" }, properties = { tag = tags[2][3] } }
-    --{ rule = { class = "Pidgin" }, properties = { tag = tags[2][3] } }
+    { rule = { class = "xchat-gnome" },
+      properties = { tag = tags[screen.count()][3] } },
+    { rule = { class = "Pidgin" },
+      properties = { tag = tags[screen.count()][3] } }
 }
 -- }}}
 
