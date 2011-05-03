@@ -44,8 +44,8 @@ set cursorline
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-"set relativenumber " vim  7.3
-"set undofile " vim 7.3
+set relativenumber " vim  7.3
+set undofile " vim 7.3
 
 " search and move
 " from http://stevelosh.com/blog/2010/09/coming-home-to-vim/
@@ -66,7 +66,7 @@ nnoremap <leader><space> :noh<cr>
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-" set colorcolumn=85 " unkown to vim 7.2
+set colorcolumn=85 " unkown to vim 7.2
 
 " use the leader
 nnoremap <leader>a :Ack
