@@ -266,6 +266,12 @@ globalkeys = awful.util.table.join(
 
     -- Custom stuff [ELE]
     awful.key({ modkey            }, "F1",     function () awful.util.spawn("/home/elemoine/soft/firefox-4/firefox -P 4.0 -no-remote") end),
+    awful.key({ modkey            }, "F2",     function () awful.util.spawn("openerp-client") end),
+    awful.key({ modkey            }, "F3",     function ()
+                                                   awful.util.spawn("xchat-gnome") 
+                                                   awful.util.spawn("pidgin")
+                                               end),
+    awful.key({ modkey            }, "F8",     function () awful.util.spawn("nvidia-settings") end),
     awful.key({ modkey            }, "F12",    function () awful.util.spawn ("xlock") end)
 )
 
@@ -350,7 +356,7 @@ awful.rules.rules = {
       properties = { floating = true } },
     -- Set FireFox to always map on tags number 2 of screen 1.
     { rule = { class = "Firefox" },
-      properties = { tag = tags[screen.count()][2] } },
+      properties = { tag = tags[1][2] } },
     -- Set im tools to always map on tags number 3 of screen 2.
     { rule = { class = "xchat-gnome" },
       properties = { tag = tags[screen.count()][3] } },
@@ -358,9 +364,11 @@ awful.rules.rules = {
       properties = { tag = tags[screen.count()][3] } },
     -- Set openerp to always map on tag number 3.
     { rule = { class = "Tinyerp-client.py" },
-      properties = { tag = tags[screen.count()][4] } },
+      properties = { tag = tags[1][4] } },
     { rule = { class = "OpenOffice.org 3.2" },
-      properties = { tag = tags[screen.count()][5] } }
+      properties = { tag = tags[1][5] } },
+    { rule = { class = "Acroread" },
+      properties = { tag = tags[1][5] } }
 }
 -- }}}
 
