@@ -252,10 +252,6 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1)         end),
     awful.key({ modkey,           }, "space", function () awful.layout.inc(layouts,  1) end),
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
-
-    -- Prompt
-    awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
-
     awful.key({ modkey }, "x",
               function ()
                   awful.prompt.run({ prompt = "Run Lua code: " },
@@ -264,7 +260,9 @@ globalkeys = awful.util.table.join(
                   awful.util.getdir("cache") .. "/history_eval")
               end),
 
+    --
     -- Custom stuff [ELE]
+    --
     awful.key({ modkey            }, "F1",     function () awful.util.spawn("/home/elemoine/soft/firefox-4/firefox -P 4.0 -no-remote") end),
     awful.key({ modkey            }, "F2",     function () awful.util.spawn("openerp-client") end),
     awful.key({ modkey            }, "F3",     function ()
@@ -272,7 +270,31 @@ globalkeys = awful.util.table.join(
                                                    awful.util.spawn("pidgin")
                                                end),
     awful.key({ modkey            }, "F8",     function () awful.util.spawn("nvidia-settings") end),
-    awful.key({ modkey            }, "F12",    function () awful.util.spawn ("xlock") end)
+    awful.key({ modkey            }, "F12",    function () awful.util.spawn ("xlock") end),
+    -- Run or raise applications with dmenu (https://awesome.naquadah.org/wiki/Using_dmenu)
+    awful.key({ modkey            }, "r",
+        function ()
+            local f_reader = io.popen( "dmenu_path | dmenu -b -nb '".. beautiful.bg_normal .."' -nf '".. beautiful.fg_normal .."' -sb '#955'")
+            local command = assert(f_reader:read('*a'))
+            f_reader:close()
+            if command == "" then return end
+
+            -- Check throught the clients if the class match the command
+            local lower_command=string.lower(command)
+            for k, c in pairs(client.get()) do
+                local class=string.lower(c.class)
+                if string.match(class, lower_command) then
+                    for i, v in ipairs(c:tags()) do
+                        awful.tag.viewonly(v)
+                        c:raise()
+                        c.minimized = false
+                        return
+                    end
+                end
+            end
+            awful.util.spawn(command)
+    end)
+
 )
 
 clientkeys = awful.util.table.join(
