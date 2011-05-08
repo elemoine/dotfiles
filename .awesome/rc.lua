@@ -263,13 +263,7 @@ globalkeys = awful.util.table.join(
     --
     -- Custom stuff [ELE]
     --
-    awful.key({ modkey            }, "F1",     function () awful.util.spawn("/home/elemoine/soft/firefox-4/firefox -P 4.0 -no-remote") end),
-    awful.key({ modkey            }, "F2",     function () awful.util.spawn("openerp-client") end),
-    awful.key({ modkey            }, "F3",     function ()
-                                                   awful.util.spawn("xchat-gnome") 
-                                                   awful.util.spawn("pidgin")
-                                               end),
-    awful.key({ modkey            }, "F8",     function () awful.util.spawn("nvidia-settings") end),
+    awful.key({ modkey            }, "F11",     function () awful.util.spawn("nvidia-settings") end),
     awful.key({ modkey            }, "F12",    function () awful.util.spawn ("xlock") end),
     -- Run or raise applications with dmenu (https://awesome.naquadah.org/wiki/Using_dmenu)
     awful.key({ modkey            }, "r",
@@ -380,7 +374,7 @@ awful.rules.rules = {
     { rule = { class = "Firefox" },
       properties = { tag = tags[1][2] } },
     -- Set im tools to always map on tags number 3 of screen 2.
-    { rule = { class = "xchat-gnome" },
+    { rule = { class = "Xchat-gnome" },
       properties = { tag = tags[screen.count()][3] } },
     { rule = { class = "Pidgin" },
       properties = { tag = tags[screen.count()][3] } },
@@ -427,4 +421,21 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 
 -- {{{ Custom stuff [ELE]
 awful.util.spawn("nm-applet &")
+
+-- inspired by the run_once function proposed in
+-- https://awesome.naquadah.org/wiki/Autostart
+function run_once(prg, arg_string, pname)
+    if not pname then
+       pname = prg
+    end
+    if not arg_string then 
+        awful.util.spawn_with_shell("pgrep -u elemoine '" .. pname .. "' || (" .. prg .. ")")
+    else
+        awful.util.spawn_with_shell("pgrep -u elemoine '" .. pname .. "' || (" .. prg .. " " .. arg_string .. ")")
+    end
+end
+run_once("/home/elemoine/soft/firefox-4/firefox", "-P 4.0 -no-remote", "firefox-bin")
+run_once("pidgin")
+run_once("xchat-gnome")
+run_once("openerp-client")
 -- }}}
