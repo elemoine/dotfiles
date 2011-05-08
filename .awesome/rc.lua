@@ -263,8 +263,9 @@ globalkeys = awful.util.table.join(
     --
     -- Custom stuff [ELE]
     --
-    awful.key({ modkey            }, "F11",     function () awful.util.spawn("nvidia-settings") end),
-    awful.key({ modkey            }, "F12",    function () awful.util.spawn ("xlock") end),
+    awful.key({ modkey            }, "F10",     function () awful.util.spawn("nvidia-settings") end),
+    awful.key({ modkey            }, "F11",    function () awful.util.spawn ("xlock") end),
+    awful.key({ modkey            }, "F12",    function () awful.util.spawn ("gksu pm-suspend") end),
     -- Run or raise applications with dmenu (https://awesome.naquadah.org/wiki/Using_dmenu)
     awful.key({ modkey            }, "r",
         function ()
