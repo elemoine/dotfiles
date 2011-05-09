@@ -91,3 +91,6 @@ map <F5> :JSLint<CR>
 
 " https://github.com/vim-scripts/YankRing.vim.git
 nmap <F2> :YRShow<CR>
+
+" https://github.com/vim-scripts/pep8
+let g:pep8_map='<F3>'
