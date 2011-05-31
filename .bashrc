@@ -76,7 +76,7 @@ fi
 source ${HOME}/.git-completion.bash
 
 export PYTHONSTARTUP=${HOME}/.pythonrc.py
-export PATH=${PATH}:${HOME}/scripts
+export PATH=${PATH}:${HOME}/install-dir/bin:${HOME}/scripts
 
 alias l='ls --color -l'
 alias a='l -a'
