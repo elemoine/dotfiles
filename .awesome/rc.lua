@@ -50,7 +50,7 @@ layouts =
 -- Define a tag table which hold all screen tags.
 tags = {
     names = { "term", "www", "im", "erp", "office", 5},
-    layouts = { layouts[2], layouts[2], layouts[2], layouts[2], layouts[2],
+    layouts = { layouts[10], layouts[2], layouts[2], layouts[2], layouts[2],
                 layouts[2] }
     }
 for s = 1, screen.count() do
@@ -435,7 +435,7 @@ function run_once(prg, arg_string, pname)
         awful.util.spawn_with_shell("pgrep -u elemoine '" .. pname .. "' || (" .. prg .. " " .. arg_string .. ")")
     end
 end
-run_once("/home/elemoine/soft/firefox-4/firefox", "-P 4.0 -no-remote", "firefox-bin")
+run_once("/home/elemoine/soft/firefox-4/firefox", "-P 5 -no-remote", "firefox-bin")
 run_once("pidgin")
 run_once("xchat-gnome")
 run_once("openerp-client")
