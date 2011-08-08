@@ -263,9 +263,12 @@ globalkeys = awful.util.table.join(
     --
     -- Custom stuff [ELE]
     --
-    awful.key({ modkey            }, "F10",     function () awful.util.spawn("nvidia-settings") end),
-    awful.key({ modkey            }, "F11",    function () awful.util.spawn ("xlock") end),
-    awful.key({ modkey            }, "F12",    function () awful.util.spawn ("gksu pm-suspend") end),
+    awful.key({ modkey            }, "F1",     function () run_once("/home/elemoine/soft/firefox-4/firefox", "-P 5 -no-remote", "firefox-bin") end),
+    awful.key({ modkey            }, "F2",     function () awful.util.spawn("/home/elemoine/soft/firefox-3/firefox", "-P 3 -no-remote", "firefox-bin") end),
+    awful.key({ modkey            }, "F9",    function () awful.util.spawn("nvidia-settings") end),
+    awful.key({ modkey            }, "F10",    function () awful.util.spawn ("xlock") end),
+    awful.key({ modkey            }, "F11",    function () awful.util.spawn ("gksu pm-suspend") end),
+    awful.key({ modkey            }, "F12",    function () awful.util.spawn ("gksu halt") end),
     -- Run or raise applications with dmenu (https://awesome.naquadah.org/wiki/Using_dmenu)
     awful.key({ modkey            }, "r",
         function ()
@@ -380,7 +383,7 @@ awful.rules.rules = {
     { rule = { class = "Pidgin" },
       properties = { tag = tags[screen.count()][3] } },
     -- Set openerp to always map on tag number 3.
-    { rule = { class = "Tinyerp-client.py" },
+    { rule = { class = "Openerp-client.py" },
       properties = { tag = tags[1][4] } },
     { rule = { class = "OpenOffice.org 3.2" },
       properties = { tag = tags[1][5] } },
