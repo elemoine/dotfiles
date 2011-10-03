@@ -433,13 +433,13 @@ function run_once(prg, arg_string, pname)
        pname = prg
     end
     if not arg_string then 
-        awful.util.spawn_with_shell("pgrep -u elemoine '" .. pname .. "' || (" .. prg .. ")")
+        awful.util.spawn_with_shell("pgrep -f -u elemoine '" .. pname .. "' || (" .. prg .. ")")
     else
-        awful.util.spawn_with_shell("pgrep -u elemoine '" .. pname .. "' || (" .. prg .. " " .. arg_string .. ")")
+        awful.util.spawn_with_shell("pgrep -f -u elemoine '" .. pname .. "' || (" .. prg .. " " .. arg_string .. ")")
     end
 end
-run_once("/home/elemoine/soft/firefox-4/firefox", "-P 5 -no-remote", "firefox-bin")
+run_once("/home/elemoine/soft/firefox-4/firefox", "-P 5 -no-remote", "firefox")
 run_once("pidgin")
 run_once("xchat-gnome")
-run_once("openerp-client")
+run_once("openerp-client", "", "/usr/bin/python ./openerp-client.py")
 -- }}}
