@@ -14,5 +14,6 @@
     ls = ls-files
     out = log HEAD..origin
     res = reset --hard
+    lsud = ls-files -o --directory --no-empty-directory
 #    externals = !git svn show-externals | grep "^/" | sed "s/toto/tata/"
 #    externals = !git svn show-externals | grep "^/" | sed "s|^/\([^ ]*\)\(.*\) \(.*\)|(mkdir -p \1 \&\& cd \1 \&\& svn co \2 \3 .)|" | sh
