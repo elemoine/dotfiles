@@ -25,3 +25,6 @@
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular
+[submodule ".vim/bundle/jslint"]
+	path = .vim/bundle/jslint
+	url = https://github.com/hallettj/jslint.vim.git
