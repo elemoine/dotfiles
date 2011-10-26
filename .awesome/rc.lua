@@ -265,7 +265,8 @@ globalkeys = awful.util.table.join(
     --
     awful.key({ modkey            }, "F1",     function () run_once("/home/elemoine/soft/firefox-4/firefox", "-P 5 -no-remote", "firefox-bin") end),
     awful.key({ modkey            }, "F2",     function () awful.util.spawn("/home/elemoine/soft/firefox-3/firefox", "-P 3 -no-remote", "firefox-bin") end),
-    awful.key({ modkey            }, "F9",    function () awful.util.spawn("nvidia-settings") end),
+    awful.key({ modkey            }, "F3",     function () awful.util.spawn("openerp-client") end),
+    awful.key({ modkey            }, "F9",     function () awful.util.spawn("nvidia-settings") end),
     awful.key({ modkey            }, "F10",    function () awful.util.spawn ("xlock") end),
     awful.key({ modkey            }, "F11",    function () awful.util.spawn ("gksu pm-suspend") end),
     awful.key({ modkey            }, "F12",    function () awful.util.spawn ("gksu halt") end),
@@ -441,5 +442,4 @@ end
 run_once("/home/elemoine/soft/firefox-4/firefox", "-P 5 -no-remote", "firefox")
 run_once("pidgin")
 run_once("xchat-gnome")
-run_once("openerp-client", "", "/usr/bin/python ./openerp-client.py")
 -- }}}
