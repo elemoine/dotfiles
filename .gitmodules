@@ -28,3 +28,6 @@
 [submodule ".vim/bundle/jslint"]
 	path = .vim/bundle/jslint
 	url = https://github.com/hallettj/jslint.vim.git
+[submodule ".vim/bundle/jshint"]
+	path = .vim/bundle/jshint
+	url = https://github.com/walm/jshint.vim
