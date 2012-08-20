@@ -74,6 +74,7 @@ fi
 # My stuff starts here [EL]
 
 source ${HOME}/.git-completion.bash
+source ${HOME}/.venvburrito/startup.sh
 
 export PYTHONSTARTUP=${HOME}/.pythonrc.py
 export PATH=${HOME}/local/bin:${HOME}/scripts:${PATH}
