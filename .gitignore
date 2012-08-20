@@ -1,3 +1,4 @@
 .vim/ftplugin
 .un~
 *.pyc
+vimrc
