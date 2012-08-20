@@ -94,3 +94,8 @@ nmap <F2> :YRShow<CR>
 
 " https://github.com/vim-scripts/pep8
 let g:pep8_map='<F3>'
+
+" https://github.com/nvie/vim-flake8
+autocmd BufWritePost *.py call Flake8()
+"let g:flake8_ignore="E501,W293"
+
