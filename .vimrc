@@ -105,3 +105,33 @@ autocmd QuickFixCmdPost *grep* cwindow
 " UI
 colorscheme torte
 
+" JavaScript
+au FileType javascript inoremap <buffer> <Leader>Fu function<Space>()<Space>{<CR>}<Esc>k$F(i
+au FileType javascript inoremap <buffer> <Leader>br break;<CR>
+au FileType javascript inoremap <buffer> <Leader>co @constructor
+au FileType javascript inoremap <buffer> <Leader>de @define<Space>{}<Esc>i
+au FileType javascript inoremap <buffer> <Leader>ei }<Space>else<Space>if<Space>()<Space>{<Esc>F(a
+au FileType javascript inoremap <buffer> <Leader>el }<Space>else<Space>{<CR>
+au FileType javascript inoremap <buffer> <Leader>en @enum<Space>{}<Esc>i
+au FileType javascript inoremap <buffer> <Leader>ex @extends<Space>{}<Esc>i
+au FileType javascript inoremap <buffer> <Leader>ga goog.asserts.assert();<Esc>F(a
+au FileType javascript inoremap <buffer> <Leader>gb goog.base(this);<Esc>F)i
+au FileType javascript inoremap <buffer> <Leader>gep <Esc>?}<CR>%^"jyt<Space>f{%ogoog.exportProperty(<CR><C-R>j,<CR><C-R>j);<Esc>k$i'<Esc>F.cl,<CR>'<Esc>2ji
+au FileType javascript inoremap <buffer> <Leader>ges goog.exportSymbol('', );<Esc>F'i
+au FileType javascript inoremap <buffer> <Leader>gi goog.inherits();<Esc>F(a
+au FileType javascript inoremap <buffer> <Leader>gp goog.provide('');<Esc>F'i
+au FileType javascript inoremap <buffer> <Leader>gr goog.require('');<Esc>F'i
+au FileType javascript inoremap <buffer> <Leader>id @inheritDoc
+au FileType javascript inoremap <buffer> <Leader>if if<Space>()<Space>{<CR>}<Esc>k$F(a
+au FileType javascript inoremap <buffer> <Leader>im @implements<Space>{}<Esc>i
+au FileType javascript inoremap <buffer> <Leader>in goog.isNull();<Esc>F(a
+au FileType javascript inoremap <buffer> <Leader>fo for<Space>()<Space>{<CR>}<Esc>k$F(a
+au FileType javascript inoremap <buffer> <Leader>f, function()<Space>{<CR>},<Esc>k$F(a
+au FileType javascript inoremap <buffer> <Leader>f; function()<Space>{<CR>};<Esc>k$F(a
+au FileType javascript inoremap <buffer> <Leader>fu function()<Space>{<CR>}<Esc>k$F(a
+au FileType javascript inoremap <buffer> <Leader>pa @param<Space>{}<Esc>i
+au FileType javascript inoremap <buffer> <Leader>pr @private
+au FileType javascript inoremap <buffer> <Leader>re @return<Space>{}<Esc>i
+au FileType javascript inoremap <buffer> <Leader>ty @type<Space>{}<Esc>i
+au FileType javascript inoremap <buffer> <Leader>wh while<Space>()<Space>{<CR>}<Esc>k$F(a
+
