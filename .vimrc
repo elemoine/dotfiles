@@ -99,3 +99,6 @@ let g:pep8_map='<F3>'
 autocmd BufWritePost *.py call Flake8()
 "let g:flake8_ignore="E501,W293"
 
+" taken from the https://github.com/tpope/vim-fugitive README
+autocmd QuickFixCmdPost *grep* cwindow 
+
