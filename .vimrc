@@ -102,3 +102,6 @@ autocmd BufWritePost *.py call Flake8()
 " taken from the https://github.com/tpope/vim-fugitive README
 autocmd QuickFixCmdPost *grep* cwindow 
 
+" UI
+colorscheme torte
+
