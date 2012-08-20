@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/jshint"]
 	path = .vim/bundle/jshint
 	url = https://github.com/walm/jshint.vim
+[submodule ".vim/bundle/flake8"]
+	path = .vim/bundle/flake8
+	url = https://github.com/nvie/vim-flake8
