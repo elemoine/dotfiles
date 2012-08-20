@@ -9,11 +9,19 @@
 [merge]
 	tool = vimdiff
 [alias]
-    addremove = !git add . && git ls-files --deleted | xargs --no-run-if-empty git rm
-    st = status
-    ls = ls-files
-    out = log HEAD..origin
-    res = reset --hard
-    lsud = ls-files -o --directory --no-empty-directory
-#    externals = !git svn show-externals | grep "^/" | sed "s/toto/tata/"
-#    externals = !git svn show-externals | grep "^/" | sed "s|^/\([^ ]*\)\(.*\) \(.*\)|(mkdir -p \1 \&\& cd \1 \&\& svn co \2 \3 .)|" | sh
+    c = commit
+    cm = commit --message
+    a = add
+    s = status
+    r = reset
+    rh = reset --hard
+    f = fetch
+    m = merge
+    r = rebase
+    d = diff
+    p = push
+    l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    co = checkout
+    pr = pull-request
+[push]
+	default = tracking
