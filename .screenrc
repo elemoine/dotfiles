@@ -1,2 +1,3 @@
 hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
 multiuser on
+setenv SSH_AUTH_SOCK "/tmp/ssh-agent-$USER-screen"

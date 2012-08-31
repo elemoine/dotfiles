@@ -15,6 +15,13 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
+# ensure $SSH_AUTH_SOCK is available at /tmp/ssh-agent-$USER-screen
+if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != "/tmp/ssh-agent-$USER-screen" ]
+then
+rm -f /tmp/ssh-agent-$USER-screen
+    ln -sf "$SSH_AUTH_SOCK" "/tmp/ssh-agent-$USER-screen"
+fi
+
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
