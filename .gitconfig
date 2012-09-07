@@ -1,8 +1,8 @@
 [core]
     excludesfile = "~/.gitignore_"
 [user]
-	name = Éric Lemoine
-	email = eric.lemoine@gmail.com
+    name = Éric Lemoine
+    email = eric.lemoine@gmail.com
 [init]
     templatedir = ~/.git_template
 [color]
