@@ -1,0 +1,3 @@
+#!/bin/sh
+rm -f .git/tags
+git ls-files | xargs -d\\n ctags --tag-relative -f .git/tags --languages=-javascript,sql --python-kinds=-i

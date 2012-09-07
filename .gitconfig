@@ -3,6 +3,8 @@
 [user]
 	name = Éric Lemoine
 	email = eric.lemoine@gmail.com
+[init]
+    templatedir = ~/.git_template
 [color]
     status = auto
     diff = auto
@@ -23,5 +25,6 @@
     l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     co = checkout
     pr = pull-request
+    ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
 [push]
 	default = tracking
