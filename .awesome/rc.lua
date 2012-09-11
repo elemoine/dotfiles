@@ -271,6 +271,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey            }, "F11",    function () awful.util.spawn ("gksu pm-suspend") end),
     awful.key({ modkey            }, "F12",    function () awful.util.spawn ("gksu halt") end),
     -- Run or raise applications with dmenu (https://awesome.naquadah.org/wiki/Using_dmenu)
+    -- Requires dmenu (apt-get install dmenu)
     awful.key({ modkey            }, "r",
         function ()
             local f_reader = io.popen( "dmenu_path | dmenu -b -nb '".. beautiful.bg_normal .."' -nf '".. beautiful.fg_normal .."' -sb '#955'")
