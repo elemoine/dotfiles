@@ -426,8 +426,6 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 -- }}}
 
 -- {{{ Custom stuff [ELE]
-awful.util.spawn("nm-applet &")
-
 -- inspired by the run_once function proposed in
 -- https://awesome.naquadah.org/wiki/Autostart
 function run_once(prg, arg_string, pname)
@@ -440,6 +438,7 @@ function run_once(prg, arg_string, pname)
         awful.util.spawn_with_shell("pgrep -u elemoine '" .. pname .. "' || (" .. prg .. " " .. arg_string .. ")")
     end
 end
+run_once("nm-applet")
 run_once("/home/elemoine/soft/firefox-dev-channel/firefox", "-P main -no-remote", "firefox")
 run_once("pidgin")
 run_once("xchat-gnome")
