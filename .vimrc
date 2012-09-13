@@ -88,7 +88,6 @@ map ,< :s/^\(.*\)$/<!-- \1 -->/<CR><Esc>:nohlsearch<CR>
 map <F4> :JSLintLight<CR>
 map <F5> :JSLint<CR>
 
-
 " https://github.com/vim-scripts/YankRing.vim.git
 nmap <F2> :YRShow<CR>
 
@@ -100,12 +99,17 @@ autocmd BufWritePost *.py call Flake8()
 "let g:flake8_ignore="E501,W293"
 
 " taken from the https://github.com/tpope/vim-fugitive README
-autocmd QuickFixCmdPost *grep* cwindow 
+autocmd QuickFixCmdPost *grep* cwindow
+
+" http://kien.github.com/ctrlp.vim/#installation
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_map = '<Leader>p'
+let g:ctrlp_cmd = 'CtrlP'
 
 " UI
 colorscheme torte
 
-" JavaScript
+" JavaScript mappings (essentially Closure-related)
 au FileType javascript inoremap <buffer> <Leader>Fu function<Space>()<Space>{<CR>}<Esc>k$F(i
 au FileType javascript inoremap <buffer> <Leader>br break;<CR>
 au FileType javascript inoremap <buffer> <Leader>co @constructor
@@ -134,4 +138,3 @@ au FileType javascript inoremap <buffer> <Leader>pr @private
 au FileType javascript inoremap <buffer> <Leader>re @return<Space>{}<Esc>i
 au FileType javascript inoremap <buffer> <Leader>ty @type<Space>{}<Esc>i
 au FileType javascript inoremap <buffer> <Leader>wh while<Space>()<Space>{<CR>}<Esc>k$F(a
-
