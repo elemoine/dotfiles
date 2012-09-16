@@ -81,7 +81,9 @@ fi
 # My stuff starts here [EL]
 
 source ${HOME}/.git-completion.bash
-source ${HOME}/.venvburrito/startup.sh
+if [ -f ${HOME}/.venvburrito/startup.sh ]; then
+    source ${HOME}/.venvburrito/startup.sh
+fi
 
 export PYTHONSTARTUP=${HOME}/.pythonrc.py
 export PATH=${HOME}/local/bin:${HOME}/scripts:${PATH}
