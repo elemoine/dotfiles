@@ -24,6 +24,13 @@ shutil.copyfile('virtualenv-burrito/virtualenv-burrito.py', vburrito)
 os.chmod(vburrito, 0755)
 run(cmd)
 
+# "global" venv
+venv_global = os.path.join(home, '.virtualenvs/global')
+if not os.path.exists(venv_global):
+    run('/bin/bash -c "source %s && mkvirtualenv global"' %
+        os.path.join(vburrito_dir, 'startup.sh'))
+run(os.path.join(venv_global, 'bin', 'pip') + ' install -r requirements.txt')
+
 # dotfiles
 exclude = ['*.sw*', '.git', 'install.*', '.gitmodules']
 for f in os.listdir('.'):

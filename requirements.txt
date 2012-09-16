@@ -1,0 +1,2 @@
+mercurial==1.7.5
+flake8
