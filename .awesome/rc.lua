@@ -87,6 +87,7 @@ mysystray = widget({ type = "systray" })
 
 -- Create an ACPI widget [ELE]
 -- (https://awesome.naquadah.org/wiki/Acpitools-based_battery_widget)
+-- Require the acpitool package (sudo apt-get install acpitool)
 mybattmon = widget({ type = "textbox", name = "mybattmon", align = "right" })
 function battery_status ()
     local output={} --output buffer
