@@ -32,7 +32,8 @@ if not os.path.exists(venv_global):
 run(os.path.join(venv_global, 'bin', 'pip') + ' install -r requirements.txt')
 
 # dotfiles
-exclude = ['*.sw*', '.git', 'install.*', '.gitmodules']
+exclude = ['*.sw*', '.git', 'install.*', '.gitmodules',
+           'build', 'requirements.txt', 'virtualenv-burrito']
 for f in os.listdir('.'):
     if not any(fnmatch.fnmatch(f, p) for p in exclude):
         path = os.path.join(os.path.expanduser('~'), f)
