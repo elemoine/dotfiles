@@ -138,3 +138,8 @@ au FileType javascript inoremap <buffer> <Leader>pr @private
 au FileType javascript inoremap <buffer> <Leader>re @return<Space>{}<Esc>i
 au FileType javascript inoremap <buffer> <Leader>ty @type<Space>{}<Esc>i
 au FileType javascript inoremap <buffer> <Leader>wh while<Space>()<Space>{<CR>}<Esc>k$F(a
+au FileType javascript inoremap <buffer> <Leader>dc describe('',<Space>function()<Space>{<CR>});<Esc>k$F'i
+au FileType javascript inoremap <buffer> <Leader>it it('',<Space>function()<Space>{<CR>});<Esc>k$F'i
+au FileType javascript inoremap <buffer> <Leader>ex expect().toX();<Esc>0f(a
+au FileType javascript inoremap <buffer> <Leader>bE beforeEach(function()<Space>{<CR>});<Esc>O
+au FileType javascript inoremap <buffer> <Leader>aE afterEach(function()<Space>{<CR>});<Esc>O
