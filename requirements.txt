@@ -1,4 +1,3 @@
-mercurial==1.7.5
 flake8
 nosier==1.1
 http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz

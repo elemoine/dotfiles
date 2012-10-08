@@ -40,3 +40,6 @@
 [submodule "virtualenv-burrito"]
 	path = virtualenv-burrito
 	url = https://github.com/brainsik/virtualenv-burrito
+[submodule ".vim/bundle/vim-git"]
+	path = .vim/bundle/vim-git
+	url = https://github.com/tpope/vim-git
