@@ -1,3 +1,6 @@
+-- [ELE] -- Debian packages required for the configuration to work:
+-- acpitool, xlockmore, dmenu
+--
 -- Standard awesome library
 require("awful")
 require("awful.autofocus")
@@ -266,8 +269,8 @@ globalkeys = awful.util.table.join(
     --
     awful.key({ modkey            }, "F1",     function () run_once("/home/elemoine/soft/firefox-dev-channel/firefox", "-P main -no-remote", "firefox-bin") end),
     awful.key({ modkey            }, "F2",     function () awful.util.spawn("/home/elemoine/soft/firefox-3/firefox", "-P 3 -no-remote", "firefox-bin") end),
-    awful.key({ modkey            }, "F3",     function () awful.util.spawn("openerp-client") end),
     awful.key({ modkey            }, "F9",     function () awful.util.spawn("nvidia-settings") end),
+    -- xlock requires the xlockmore package (apt-get install xlockmore)
     awful.key({ modkey            }, "F10",    function () awful.util.spawn ("xlock") end),
     awful.key({ modkey            }, "F11",    function () awful.util.spawn ("gksu pm-suspend") end),
     awful.key({ modkey            }, "F12",    function () awful.util.spawn ("gksu halt") end),
@@ -380,6 +383,9 @@ awful.rules.rules = {
     -- Set FireFox to always map on tags number 2 of screen 1.
     { rule = { class = "Firefox" },
       properties = { tag = tags[1][2] } },
+    -- Set Chrome to always map on tags number 2 of screen 1.
+    { rule = { class = "Google-chrome" },
+      properties = { tag = tags[1][2] } },
     -- Set im tools to always map on tags number 3 of screen 2.
     { rule = { class = "Xchat-gnome" },
       properties = { tag = tags[screen.count()][3] } },
@@ -441,6 +447,7 @@ function run_once(prg, arg_string, pname)
 end
 run_once("nm-applet")
 run_once("/home/elemoine/soft/firefox-dev-channel/firefox", "-P main -no-remote", "firefox")
+run_once("google-chrome", "", "chrome")
 run_once("pidgin")
 run_once("xchat-gnome")
 -- }}}
