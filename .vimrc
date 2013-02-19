@@ -81,6 +81,9 @@ map ** {!} par 70j<CR>
 map *o {!} par 67j<CR>:/./,/^$/s/^/   /<CR>xx{jR o<ESC>
 map *- {!} par 67j<CR>:/./,/^$/s/^/    /<CR>xx{jR  -<ESC>
 
+" write a file as root
+cmap w!! w !sudo tee % >/dev/null
+
 map @o gqap{:/./,/^$/s/^/    /<CR>xx{jR o<ESC>
 map ,< :s/^\(.*\)$/<!-- \1 -->/<CR><Esc>:nohlsearch<CR>
 
