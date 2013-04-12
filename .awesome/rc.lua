@@ -450,4 +450,7 @@ run_once("/home/elemoine/soft/firefox-dev-channel/firefox", "-P main -no-remote"
 run_once("google-chrome", "", "chrome")
 run_once("pidgin")
 run_once("xchat-gnome")
+run_once("gnome-power-manager")
+run_once("gnome-settings-daemon")
+run_once("gnome-sound-applet")
 -- }}}
