@@ -21,6 +21,7 @@
     rh = reset --hard
     f = fetch
     m = merge
+    mf = merge --ff-only
     r = rebase
     rs = rebase --interactive --autosquash
     d = diff
