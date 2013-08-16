@@ -1,0 +1,5 @@
+# http://stackoverflow.com/questions/1550288/mac-os-x-terminal-colors
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+alias l='ls -l'
