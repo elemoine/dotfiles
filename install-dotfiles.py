@@ -4,7 +4,7 @@ import fnmatch
 import shutil
 
 
-exclude = ['*.sw*', '.git', 'install-dotfiles.py', '.gitmodules', 'Makefile',
+exclude = ['*.sw*', '.git', '*.un~', 'install-dotfiles.py', '.gitmodules', 'Makefile',
            'build', 'requirements.txt', 'virtualenv-burrito']
 for f in os.listdir('.'):
     if not any(fnmatch.fnmatch(f, p) for p in exclude):
