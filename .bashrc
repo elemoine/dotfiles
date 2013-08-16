@@ -104,9 +104,6 @@ alias sS='screen -S'
 alias sls='screen -ls'
 alias sdr='screen -dr'
 
-alias t='python ~/src/t/t.py --task-dir ~/tasks --list tasks'
-alias git-co-externals='git svn show-externals | grep "^/" | sed "s|^/\([^ ]*\)\(.*\) \(.*\)|(mkdir -p \1 \&\& cd \1 \&\& if [ -d .svn ]; then echo \"svn up \2 \1\" \&\& svn up \2 ; else echo \"svn co \2 \3 \1\" \&\& svn co \2 \3 . ; fi)|" | sh'
-
 alias g=git
 
 LANG=en_US.UTF-8
@@ -129,20 +126,3 @@ export PS1
 
 LESS="-RXF"
 export LESS
-
-function svndiff () {
-    if [ "$1" != "" ]; then
-        svn diff $@ | colordiff;
-    else
-        svn diff | colordiff;
-    fi
-}
-
-function svnaddremove () {
-    for f in $(svn status | grep '^\?' | nawk '{print $2}'); do
-        svn add $f;
-    done
-    for f in $(svn status | grep '^\!' | nawk '{print $2}'); do
-        svn rm $f;
-    done
-}
