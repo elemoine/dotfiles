@@ -10,6 +10,7 @@ submodule:
 
 .PHONY: venv
 venv: $(HOME)/.virtualenvs/main
+	$(HOME)/.virtualenvs/main/bin/pip install -r requirements.txt
 
 $(HOME)/.virtualenvs/main: $(HOME)/.venvburrito
 	source $(HOME)/.venvburrito/startup.sh && mkvirtualenv main
