@@ -16,6 +16,7 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
 # ensure $SSH_AUTH_SOCK is available at /tmp/ssh-agent-$USER-screen
+# see http://blog.onetechnical.com/2009/09/15/reconnect-ssh-agent-in-screen/
 if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != "/tmp/ssh-agent-$USER-screen" ]
 then
 rm -f /tmp/ssh-agent-$USER-screen
