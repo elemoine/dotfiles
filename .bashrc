@@ -23,7 +23,7 @@ alias sS='screen -S'
 alias sls='screen -ls'
 alias sdr='screen -dr'
 
-export PATH=${HOME}/local/bin
+export PATH=${HOME}/local/bin:${PATH}
 
 if [ ${os} == "Linux" ]; then
     source ${HOME}/.bashrc_debian_custom
