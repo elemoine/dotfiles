@@ -23,6 +23,8 @@ alias sS='screen -S'
 alias sls='screen -ls'
 alias sdr='screen -dr'
 
+export PATH=${HOME}/local/bin
+
 if [ ${os} == "Linux" ]; then
     source ${HOME}/.bashrc_debian_custom
 elif [ ${os} == "Darwin" ]; then
