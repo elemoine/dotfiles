@@ -11,7 +11,7 @@
 
 " pathogen
 filetype off
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 filetype plugin indent on
 
 " change my <leader> key
