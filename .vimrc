@@ -109,6 +109,8 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<Leader>p'
 let g:ctrlp_cmd = 'CtrlP'
 
+let g:syntastic_javascript_checkers = ['gjslint']
+
 " UI
 colorscheme torte
 
