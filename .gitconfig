@@ -9,6 +9,8 @@
 [color]
     status = auto
     diff = auto
+    branch = auto
+    interactive = auto
 [merge]
 	tool = vimdiff
 [alias]
