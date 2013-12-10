@@ -110,6 +110,7 @@ let g:ctrlp_map = '<Leader>p'
 let g:ctrlp_cmd = 'CtrlP'
 
 let g:syntastic_javascript_checkers = ['gjslint']
+let g:syntastic_javascript_gjslint_conf = "-strict --custom_jsdoc_tags=todo"
 
 " UI
 colorscheme torte
