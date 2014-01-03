@@ -1,5 +1,7 @@
 VIRTUALENV_BURRITO_SH = https://raw.github.com/brainsik/virtualenv-burrito/master/virtualenv-burrito.sh
 
+SHELL := /bin/bash
+
 
 .PHONY: all
 all: submodule venv dotfiles
