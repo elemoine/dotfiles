@@ -14,4 +14,4 @@ export SENCHA_SDK_TOOLS_2_0_0_BETA3=/opt/SenchaSDKTools-2.0.0-beta3/
 export LESS="-RXF"
 
 alias l='ls --color -l'
-alias bepo='setxkbmap -model pc105 -layout "fr,fr" -variant "bepo,oss" -option "grp:shifts_toggle,grp_led:scroll"'
+alias skb='setxkbmap -model pc105 -layout "fr,fr" -variant "bepo,oss" -option "grp:shifts_toggle,grp_led:scroll"'
