@@ -115,6 +115,17 @@ let g:syntastic_javascript_gjslint_conf = "-strict --custom_jsdoc_tags=todo"
 " UI
 colorscheme torte
 
+" bépo related
+noremap f k
+noremap w <C-w>
+noremap W <C-w><C-w>
+noremap wj <C-w>j
+noremap wf <C-w>k
+noremap wl <C-w>l
+noremap wh <C-w>h
+inoremap ts <Esc>
+vnoremap ts <Esc>
+
 " JavaScript mappings (essentially Closure-related)
 au FileType javascript inoremap <buffer> <Leader>Fu function<Space>()<Space>{<CR>}<Esc>k$F(i
 au FileType javascript inoremap <buffer> <Leader>br break;<CR>
