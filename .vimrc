@@ -23,6 +23,11 @@ set modelines=0
 
 syntax on
 
+" source vimrc on write
+if has("autocmd")
+  autocmd! bufwritepost .vimrc source ~/.vimrc
+endif
+
 " indent stuff
 set tabstop=4
 set softtabstop=4
