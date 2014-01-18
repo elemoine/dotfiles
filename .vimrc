@@ -121,6 +121,7 @@ let g:syntastic_javascript_gjslint_conf = "-strict --custom_jsdoc_tags=todo"
 colorscheme torte
 
 " bépo related
+" http://bepo.fr/wiki/Vim
 noremap f k
 noremap w <C-w>
 noremap W <C-w><C-w>
@@ -128,8 +129,17 @@ noremap wj <C-w>j
 noremap wf <C-w>k
 noremap wl <C-w>l
 noremap wh <C-w>h
+noremap « <
+noremap » >
 inoremap ts <Esc>
 vnoremap ts <Esc>
+inoremap <Tab> <Esc>
+vnoremap <Tab> <Esc>
+inoremap <S-Tab> <Tab>
+vnoremap <S-Tab> <Tab>
+noremap <BS> <C-U>
+noremap <Space> <C-D>
+
 
 " JavaScript mappings (essentially Closure-related)
 au FileType javascript inoremap <buffer> <Leader>Fu function<Space>()<Space>{<CR>}<Esc>k$F(i
