@@ -2,4 +2,4 @@
 path = %(HOME)s/src/closure-library
 
 [ol3]
-path = %(HOME)s/src/ol3
+path = %(HOME)s/src/ol3/src/ol
