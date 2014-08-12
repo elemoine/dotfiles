@@ -18,7 +18,7 @@ $(HOME)/.virtualenvs/main: $(HOME)/.venvburrito
 	source $(HOME)/.venvburrito/startup.sh && mkvirtualenv main
 
 $(HOME)/.venvburrito:
-	curl -s $(VIRTUALENV_BURRITO_SH) | $(SHELL)
+	curl -s $(VIRTUALENV_BURRITO_SH) | /bin/bash
 
 .PHONY: dotfiles
 dotfiles:
