@@ -73,6 +73,9 @@ set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85 " unkown to vim 7.2
 
+" alias unnamed register to the + register
+set clipboard=unnamedplus
+
 " use the leader
 nnoremap <leader>a :Ack
 nnoremap <leader>* "zyiw:Ack <c-r>z<CR>
@@ -122,24 +125,25 @@ colorscheme torte
 
 " bépo related
 " http://bepo.fr/wiki/Vim
-noremap f k
 noremap w <C-w>
 noremap W <C-w><C-w>
+noremap <Leader><Leader> <C-w><C-w>
 noremap wj <C-w>j
 noremap wf <C-w>k
 noremap wl <C-w>l
 noremap wh <C-w>h
 noremap « <
 noremap » >
-inoremap ts <Esc>
-vnoremap ts <Esc>
+inoremap « <
+inoremap » >
+inoremap gq <Esc>
+vnoremap gq <Esc>
 inoremap <Tab> <Esc>
 vnoremap <Tab> <Esc>
 inoremap <S-Tab> <Tab>
 vnoremap <S-Tab> <Tab>
 noremap <BS> <C-U>
 noremap <Space> <C-D>
-
 
 " JavaScript mappings (essentially Closure-related)
 au FileType javascript inoremap <buffer> <Leader>Fu function<Space>()<Space>{<CR>}<Esc>k$F(i
@@ -175,3 +179,6 @@ au FileType javascript inoremap <buffer> <Leader>it it('',<Space>function()<Spac
 au FileType javascript inoremap <buffer> <Leader>ex expect().toX();<Esc>0f(a
 au FileType javascript inoremap <buffer> <Leader>bE beforeEach(function()<Space>{<CR>});<Esc>O
 au FileType javascript inoremap <buffer> <Leader>aE afterEach(function()<Space>{<CR>});<Esc>O
+
+" Markdown mappings
+au FileType markdown inoremap <buffer> <Leader>sl <!SLIDE><Esc>FEa
