@@ -25,6 +25,7 @@
     m = merge
     mf = merge --ff-only
     r = rebase
+    ri = rebase --interactive
     rs = rebase --interactive --autosquash
     d = diff
     p = push
