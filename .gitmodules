@@ -1,30 +1,30 @@
 [submodule ".vim/bundle/ack"]
 	path = .vim/bundle/ack
-	url = git://github.com/mileszs/ack.vim.git
+	url = https://github.com/mileszs/ack.vim
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
-	url = http://github.com/scrooloose/nerdcommenter.git
+	url = https://github.com/scrooloose/nerdcommenter
 [submodule ".vim/bundle/bufexplorer"]
 	path = .vim/bundle/bufexplorer
-	url = http://github.com/markabe/bufexplorer.git
+	url = https://github.com/markabe/bufexplorer
 [submodule ".vim/bundle/yankring"]
 	path = .vim/bundle/yankring
-	url = https://github.com/vim-scripts/YankRing.vim.git
+	url = https://github.com/vim-scripts/YankRing.vim
 [submodule ".vim/bundle/surround"]
 	path = .vim/bundle/surround
-	url = https://github.com/tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround
 [submodule ".vim/bundle/fugitive"]
 	path = .vim/bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive
 [submodule ".vim/bundle/pep8"]
 	path = .vim/bundle/pep8
-	url = https://github.com/vim-scripts/pep8.git
+	url = https://github.com/vim-scripts/pep8
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular
 [submodule ".vim/bundle/jslint"]
 	path = .vim/bundle/jslint
-	url = https://github.com/hallettj/jslint.vim.git
+	url = https://github.com/hallettj/jslint.vim
 [submodule ".vim/bundle/jshint"]
 	path = .vim/bundle/jshint
 	url = https://github.com/walm/jshint.vim
@@ -33,22 +33,22 @@
 	url = https://github.com/nvie/vim-flake8
 [submodule ".vim/bundle/ctrlp"]
 	path = .vim/bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
+	url = https://github.com/kien/ctrlp.vim
 [submodule ".vim/bundle/vim-git"]
 	path = .vim/bundle/vim-git
 	url = https://github.com/tpope/vim-git
 [submodule ".vim/bundle/abolish"]
 	path = .vim/bundle/abolish
-	url = git://github.com/tpope/vim-abolish.git
+	url = https://github.com/tpope/vim-abolish
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
+	url = https://github.com/scrooloose/syntastic
 [submodule ".vim/bundle/vim-abolish"]
 	path = .vim/bundle/vim-abolish
 	url = https://github.com/tpope/vim-abolish
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
-	url = git@github.com:tpope/vim-markdown.git
+	url = https://github.com/tpope/vim-markdown
 [submodule ".vim/bundle/vim-puppet"]
 	path = .vim/bundle/vim-puppet
-	url = git://github.com/rodjek/vim-puppet.git
+	url = https://github.com/rodjek/vim-puppet
