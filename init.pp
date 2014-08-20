@@ -12,6 +12,9 @@ class elemoine::package {
   package {'vim-gtk':
     ensure => present,
   }
+  package {'xchat-gnome':
+    ensure => present,
+  }
   file {'vimrc':
     ensure => link,
     path   => "${::homedir}/.vimrc",
