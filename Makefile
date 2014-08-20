@@ -4,7 +4,12 @@ SHELL := /bin/bash
 
 
 .PHONY: all
-all: submodule venv dotfiles
+all: puppet submodule venv dotfiles
+
+.PHONY: puppet
+puppet: init.pp
+	puppet parser validate $< && \
+	sudo FACTER_homedir=$(HOME) FACTER_cwd=$(shell pwd) FACTER_user=$(shell whoami) puppet apply $<
 
 .PHONY: submodule
 submodule:
