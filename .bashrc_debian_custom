@@ -15,3 +15,4 @@ export LESS="-RXF"
 
 alias l='ls --color -l'
 alias skb='setxkbmap -model pc105 -layout "fr,fr" -variant "bepo,oss" -option "grp:shifts_toggle,grp_led:scroll"'
+alias screenshot='gnome-screenshot --area'
