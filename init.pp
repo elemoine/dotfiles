@@ -15,6 +15,9 @@ class elemoine::package {
   package {'xchat-gnome':
     ensure => present,
   }
+  package {'gnome-control-center':
+    ensure => present,
+  }
   file {'vimrc':
     ensure => link,
     path   => "${::homedir}/.vimrc",
