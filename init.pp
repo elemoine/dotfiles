@@ -18,6 +18,9 @@ class elemoine::package {
   package {'gnome-control-center':
     ensure => present,
   }
+  package {'gksu':
+    ensure => present,
+  }
   file {'vimrc':
     ensure => link,
     path   => "${::homedir}/.vimrc",
