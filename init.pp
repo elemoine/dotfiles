@@ -21,6 +21,9 @@ class elemoine::package {
   package {'gksu':
     ensure => present,
   }
+  package {'wordnet-gui':
+    ensure => present,
+  }
   file {'vimrc':
     ensure => link,
     path   => "${::homedir}/.vimrc",
