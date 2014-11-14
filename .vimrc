@@ -120,6 +120,12 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:syntastic_javascript_checkers = ['gjslint']
 let g:syntastic_javascript_gjslint_conf = "-strict --custom_jsdoc_tags=todo"
 
+" https://github.com/mattn/emmet-vim
+let g:user_emmet_leader_key='<C-F>'
+
+" https://github.com/Lokaltog/vim-easymotion
+map <Leader>y <Plug>(easymotion-prefix)
+
 " UI
 colorscheme torte
 
