@@ -95,10 +95,6 @@ cmap w!! w !sudo tee % >/dev/null
 map @o gqap{:/./,/^$/s/^/    /<CR>xx{jR o<ESC>
 map ,< :s/^\(.*\)$/<!-- \1 -->/<CR><Esc>:nohlsearch<CR>
 
-" http://github.com/hallettj/jslint.vim
-map <F4> :JSLintLight<CR>
-map <F5> :JSLint<CR>
-
 " https://github.com/vim-scripts/YankRing.vim.git
 nmap <F2> :YRShow<CR>
 
