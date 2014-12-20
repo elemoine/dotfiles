@@ -134,10 +134,10 @@ noremap wj <C-w>j
 noremap wf <C-w>k
 noremap wl <C-w>l
 noremap wh <C-w>h
-noremap « <
-noremap » >
-inoremap « <
-inoremap » >
+"noremap « <
+"noremap » >
+"inoremap « <
+"inoremap » >
 inoremap gq <Esc>
 vnoremap gq <Esc>
 inoremap <Tab> <Esc>
