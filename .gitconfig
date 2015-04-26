@@ -34,5 +34,7 @@
     co = checkout
     pr = pull-request
     ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
+[branch]
+    autosetupmerge = false
 [push]
-	default = tracking
+	default = nothing
