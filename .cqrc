@@ -3,3 +3,6 @@ path = %(HOME)s/src/closure-library
 
 [ol3]
 path = %(HOME)s/src/ol3/src/ol
+
+[ngeo]
+path = %(HOME)s/src/ngeo/src
