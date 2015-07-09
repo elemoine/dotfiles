@@ -1,4 +1,4 @@
-VIRTUALENV_BURRITO_SH = https://raw.github.com/brainsik/virtualenv-burrito/master/virtualenv-burrito.sh
+VIRTUALENV_BURRITO_SH = https://raw.githubusercontent.com/brainsik/virtualenv-burrito/master/virtualenv-burrito.sh
 
 SHELL := /bin/bash
 
@@ -23,7 +23,7 @@ $(HOME)/.virtualenvs/main: $(HOME)/.venvburrito
 	source $(HOME)/.venvburrito/startup.sh && mkvirtualenv main
 
 $(HOME)/.venvburrito:
-	curl -s $(VIRTUALENV_BURRITO_SH) | /bin/bash
+	curl -sL $(VIRTUALENV_BURRITO_SH) | /bin/bash
 
 .PHONY: dotfiles
 dotfiles:
