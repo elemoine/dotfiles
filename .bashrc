@@ -5,8 +5,11 @@ if [ ${os} == "Linux" ]; then
 fi
 
 source ${HOME}/.git-completion.bash
-if [ -f ${HOME}/.venvburrito/startup.sh ]; then
-    source ${HOME}/.venvburrito/startup.sh
+
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    export WORKON_HOME=${HOME}/.virtualenvs
+    export PROJECT_HOME=${HOME}/src
+    source /usr/local/bin/virtualenvwrapper.sh
 fi
 
 export PYTHONSTARTUP=${HOME}/.pythonrc.py
