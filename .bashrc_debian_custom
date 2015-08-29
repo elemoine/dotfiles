@@ -4,12 +4,6 @@ export LC_CTYPE=en_US.UTF-8
 export PATH=/opt/jdk1.7.0_10/bin:${PATH}
 export PATH=${HOME}/scripts:${PATH}
 export PATH=${HOME}/.gem/ruby/1.8/bin:${PATH}
-export PATH=/opt/SenchaSDKTools-2.0.0-beta3/:${PATH}
-export PATH=${HOME}/local/opt/Sencha/Cmd/3.0.2.288:${PATH}
-export PATH=${HOME}/local/opt/android-sdk-linux/platform-tools:${PATH}
-export PATH=${HOME}/local/opt/android-sdk-linux/tools:${PATH}
-
-export SENCHA_SDK_TOOLS_2_0_0_BETA3=/opt/SenchaSDKTools-2.0.0-beta3/
 
 export LESS="-RXF"
 
