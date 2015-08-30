@@ -1,5 +1,5 @@
 .PHONY: all
-all: submodule dotfiles virtualenv virtualenvwrapper venv
+all: submodule dotfiles pip virtualenv virtualenvwrapper venv
 
 .PHONY: submodule
 submodule:
@@ -11,7 +11,7 @@ dotfiles:
 
 .PHONY: pip
 pip: get-pip.py
-	sudo python get-pip.py
+	python get-pip.py --user
 
 get-pip.py:
 	curl -O https://bootstrap.pypa.io/get-pip.py
