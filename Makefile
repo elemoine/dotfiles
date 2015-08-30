@@ -1,5 +1,5 @@
 .PHONY: all
-all: submodule dotfiles venv
+all: submodule dotfiles virtualenv virtualenvwrapper venv
 
 .PHONY: submodule
 submodule:
@@ -17,12 +17,12 @@ get-pip.py:
 	curl -O https://bootstrap.pypa.io/get-pip.py
 
 .PHONY: virtualenv
-install-virtualenv:
-	sudo pip install --upgrade virtualenv
+virtualenv:
+	pip install --user --upgrade virtualenv
 
 .PHONY: virtualenvwrapper
-install-virtualenvwrapper:
-	sudo pip install --upgrade virtualenvwrapper
+virtualenvwrapper:
+	pip install --user --upgrade virtualenvwrapper
 
 .PHONY: venv
 venv: $(HOME)/.virtualenvs/main

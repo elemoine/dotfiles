@@ -6,10 +6,10 @@ fi
 
 source ${HOME}/.git-completion.bash
 
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+if [ -f ${HOME}/.local/bin/virtualenvwrapper.sh ]; then
     export WORKON_HOME=${HOME}/.virtualenvs
     export PROJECT_HOME=${HOME}/src
-    source /usr/local/bin/virtualenvwrapper.sh
+    source ${HOME}/.local/bin/virtualenvwrapper.sh
 fi
 
 export PYTHONSTARTUP=${HOME}/.pythonrc.py
@@ -30,7 +30,7 @@ alias tn='tmux new-session -s'
 alias ta='tmux attach-session -t'
 alias tk='tmux kill-session -t'
 
-export PATH=${HOME}/local/bin:${PATH}
+export PATH=${HOME}/.local/bin:${HOME}/local/bin:${PATH}
 
 if [ ${os} == "Linux" ]; then
     source ${HOME}/.bashrc_debian_custom
