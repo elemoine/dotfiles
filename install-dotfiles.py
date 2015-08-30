@@ -16,7 +16,7 @@ def create_symlink(dotname, directory=''):
 
 exclude = ['*.sw*', '.git', '*.un~', 'install-dotfiles.py',
     '.gitmodules', 'Makefile', 'build', 'requirements.txt',
-    '.config']
+    'init.pp', '.config']
 
 for f in os.listdir('.'):
     if not any(fnmatch.fnmatch(f, p) for p in exclude):
