@@ -18,11 +18,11 @@ get-pip.py:
 
 .PHONY: virtualenv
 virtualenv:
-	pip install --user --upgrade virtualenv
+	$(HOME)/.local/bin/pip install --user --upgrade virtualenv
 
 .PHONY: virtualenvwrapper
 virtualenvwrapper:
-	pip install --user --upgrade virtualenvwrapper
+	$(HOME)/.local/bin/pip install --user --upgrade virtualenvwrapper
 
 .PHONY: venv
 venv: $(HOME)/.virtualenvs/main
