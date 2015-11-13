@@ -37,3 +37,6 @@ if [ ${os} == "Linux" ]; then
 elif [ ${os} == "Darwin" ]; then
     source ${HOME}/.bashrc_osx_custom
 fi
+
+export NVM_DIR="/home/elemoine/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
