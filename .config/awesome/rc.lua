@@ -1,5 +1,5 @@
 -- [ELE] -- Debian packages required for the configuration to work:
--- acpitool, xlockmore, dmenu
+-- acpitool, xlockmore, dmenu, gksu
 --
 -- Standard awesome library
 require("awful")
