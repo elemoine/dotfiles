@@ -385,7 +385,7 @@ awful.rules.rules = {
     { rule = { class = "Firefox" },
       properties = { tag = tags[1][2] } },
     -- Set Chrome to always map on tags number 2 of screen 1.
-    { rule = { class = "Google-chrome" },
+    { rule = { class = "google-chrome" },
       properties = { tag = tags[1][2] } },
     -- Set im tools to always map on tags number 3 of screen 2.
     { rule = { class = "Xchat-gnome" },
