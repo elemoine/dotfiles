@@ -29,7 +29,7 @@ venv: $(HOME)/.virtualenvs/main
 	$(HOME)/.virtualenvs/main/bin/pip install -r requirements.txt
 
 $(HOME)/.virtualenvs/main:
-	virtualenv $@
+	$(HOME)/.local/bin/virtualenv $@
 
 .PHONY: puppet
 puppet: init.pp
