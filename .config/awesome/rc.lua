@@ -388,9 +388,7 @@ awful.rules.rules = {
     { rule = { class = "google-chrome" },
       properties = { tag = tags[1][2] } },
     -- Set im tools to always map on tags number 3 of screen 2.
-    { rule = { class = "Xchat-gnome" },
-      properties = { tag = tags[screen.count()][3] } },
-    { rule = { class = "Pidgin" },
+    { rule = { class = "Hexchat" },
       properties = { tag = tags[screen.count()][3] } },
     -- Set openerp to always map on tag number 3.
     { rule = { class = "Openerp-client.py" },
@@ -449,8 +447,7 @@ end
 run_once("nm-applet")
 run_once("firefox", "-P main", "firefox")
 run_once("google-chrome-stable", "", "chrome")
-run_once("pidgin")
-run_once("xchat-gnome")
+run_once("hexchat")
 run_once("gnome-power-manager")
 run_once("gnome-settings-daemon")
 run_once("gnome-sound-applet")
