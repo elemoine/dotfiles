@@ -267,7 +267,7 @@ globalkeys = awful.util.table.join(
     --
     -- Custom stuff [ELE]
     --
-    awful.key({ modkey            }, "F1",     function () run_once("firefox", "-P main -no-remote", "firefox-bin") end),
+    awful.key({ modkey            }, "F1",     function () run_once("firefox", "-P main", "firefox-bin") end),
     awful.key({ modkey            }, "Print",  function () awful.util.spawn_with_shell("gnome-screenshot --area --interactive") end),
     awful.key({ modkey            }, "F9",     function () awful.util.spawn("nvidia-settings") end),
     -- xlock requires the xlockmore package (apt-get install xlockmore)
@@ -447,7 +447,7 @@ function run_once(prg, arg_string, pname)
     end
 end
 run_once("nm-applet")
-run_once("firefox", "-P main -no-remote", "firefox")
+run_once("firefox", "-P main", "firefox")
 run_once("google-chrome-stable", "", "chrome")
 run_once("pidgin")
 run_once("xchat-gnome")
