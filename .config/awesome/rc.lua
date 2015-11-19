@@ -52,9 +52,8 @@ layouts =
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {
-    names = { "term", "www", "im", "erp", "office", 5},
-    layouts = { layouts[10], layouts[2], layouts[2], layouts[2], layouts[2],
-                layouts[2] }
+    names = { "term", "www", "im", "office" },
+    layouts = { layouts[10], layouts[2], layouts[2], layouts[2] }
     }
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
@@ -381,22 +380,19 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "gimp" },
       properties = { floating = true } },
-    -- Set FireFox to always map on tags number 2 of screen 1.
+    -- Set Firefox and Chrome to always map on tag 2 (www) of screen 1.
     { rule = { class = "Firefox" },
       properties = { tag = tags[1][2] } },
-    -- Set Chrome to always map on tags number 2 of screen 1.
     { rule = { class = "google-chrome" },
       properties = { tag = tags[1][2] } },
-    -- Set im tools to always map on tags number 3 of screen 2.
+    -- Set Instant Messaging tools to always map on tag 3 (im) of screen 2.
     { rule = { class = "Hexchat" },
       properties = { tag = tags[screen.count()][3] } },
-    -- Set openerp to always map on tag number 3.
-    { rule = { class = "Openerp-client.py" },
-      properties = { tag = tags[1][4] } },
+    -- Set Office-like tools to always map on tag 4 (office) of screen 1.
     { rule = { class = "OpenOffice.org 3.2" },
-      properties = { tag = tags[1][5] } },
+      properties = { tag = tags[1][4] } },
     { rule = { class = "Acroread" },
-      properties = { tag = tags[1][5] } }
+      properties = { tag = tags[1][4] } }
 }
 -- }}}
 
