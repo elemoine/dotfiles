@@ -4,3 +4,4 @@ http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
 docutils
 rst2pdf
 git-review
+tox
