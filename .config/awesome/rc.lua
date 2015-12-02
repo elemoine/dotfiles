@@ -267,6 +267,7 @@ globalkeys = awful.util.table.join(
     -- Custom stuff [ELE]
     --
     awful.key({ modkey            }, "F1",     function () run_once("firefox", "-P main", "firefox-bin") end),
+    awful.key({ modkey            }, "F2",     function () awful.util.spawn_with_shell("firefox -P main --new-window https://miracloud.slack.com/") end),
     awful.key({ modkey            }, "Print",  function () awful.util.spawn_with_shell("gnome-screenshot --area --interactive") end),
     awful.key({ modkey            }, "F9",     function () awful.util.spawn("nvidia-settings") end),
     -- xlock requires the xlockmore package (apt-get install xlockmore)
