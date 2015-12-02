@@ -10,4 +10,5 @@ export LESS="-RXF"
 alias l='ls --color -l'
 alias skb='setxkbmap -model pc105 -layout "fr,fr" -variant "bepo,oss" -option "grp:shifts_toggle,grp_led:scroll"'
 alias screenshot='gnome-screenshot --area'
-alias setscr='sudo xrandr --output DP1 --primary'
+alias setdp='sudo xrandr --output DP1 --primary'
+alias unsetdp='sudo xrandr --ouput DP1 --off'
