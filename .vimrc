@@ -74,6 +74,7 @@ set formatoptions=qrn1
 set colorcolumn=85 " unkown to vim 7.2
 
 " alias unnamed register to the + register
+" requires vim-gtk
 set clipboard=unnamedplus
 
 " use the leader
