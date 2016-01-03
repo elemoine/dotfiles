@@ -5,6 +5,7 @@ if [ ${os} == "Linux" ]; then
 fi
 
 source ${HOME}/.git-completion.bash
+source ${HOME}/.virsh-completion.bash
 
 if [ -f ${HOME}/.local/bin/virtualenvwrapper.sh ]; then
     export WORKON_HOME=${HOME}/.virtualenvs
