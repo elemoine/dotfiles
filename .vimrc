@@ -71,7 +71,7 @@ nnoremap <leader><space> :noh<cr>
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85 " unkown to vim 7.2
+set colorcolumn=85 " unknown to vim 7.2
 
 " alias unnamed register to the + register
 " requires vim-gtk
