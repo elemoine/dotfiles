@@ -2,7 +2,7 @@
     excludesfile = "~/.gitignore_"
 [user]
     name = Éric Lemoine
-    email = eric.lemoine@gmail.com
+    email = elemoine@mirantis.com
 [init]
     # does not work with git 1.7.0.4
     templatedir = ~/.git_template
