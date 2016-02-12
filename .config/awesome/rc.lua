@@ -444,7 +444,7 @@ end
 run_once("nm-applet")
 run_once("firefox", "-P main", "firefox")
 run_once("google-chrome-stable", "", "chrome")
-run_once("hexchat")
+--run_once("hexchat")
 run_once("gnome-power-manager")
 run_once("gnome-settings-daemon")
 run_once("gnome-sound-applet")
