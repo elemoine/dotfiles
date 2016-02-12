@@ -5,3 +5,4 @@ docutils
 rst2pdf
 git-review
 tox
+docker-compose
