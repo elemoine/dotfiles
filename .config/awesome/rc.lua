@@ -443,7 +443,7 @@ function run_once(prg, arg_string, pname)
 end
 run_once("nm-applet")
 run_once("firefox", "-P main", "firefox")
-run_once("google-chrome-stable", "", "chrome")
+--run_once("google-chrome-stable", "", "chrome")
 --run_once("hexchat")
 run_once("gnome-power-manager")
 run_once("gnome-settings-daemon")
