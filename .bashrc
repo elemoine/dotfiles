@@ -30,6 +30,7 @@ alias tl='tmux list-sessions'
 alias tn='tmux new-session -s'
 alias ta='tmux attach-session -t'
 alias tk='tmux kill-session -t'
+alias tb="nc termbin.com 9999"
 
 export PATH=${HOME}/.local/bin:${HOME}/local/bin:${PATH}
 
