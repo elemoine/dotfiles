@@ -123,6 +123,9 @@ let g:user_emmet_leader_key='<C-F>'
 " https://github.com/Lokaltog/vim-easymotion
 map <Leader>y <Plug>(easymotion-prefix)
 
+" http://dmerej.info/blog/index.php/?post/2016/04/30/Vim-and-cwd
+map <Leader>cd :lcd %:h<CR>
+
 " UI
 colorscheme torte
 
