@@ -1,5 +1,0 @@
-autoload -U compinit
-compinit
-
-zstyle ':completion:*:descriptions' format '%B%d%b'
-zstyle ':completion:*:warnings' format 'No matches for: %d'
