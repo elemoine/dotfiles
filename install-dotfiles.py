@@ -5,7 +5,10 @@ import shutil
 
 
 def create_symlink(dotname, directory=''):
-    path = os.path.join(os.path.expanduser('~'), directory, dotname)
+    directory_path = os.path.join(os.path.expanduser('~'), directory)
+    if not os.path.isdir(directory_path):
+        os.mkdir(directory_path)
+    path = os.path.join(directory_path, dotname)
     if os.path.isfile(path) or os.path.islink(path):
         os.unlink(path)
     elif os.path.isdir(path):
