@@ -1,5 +1,9 @@
 .PHONY: all
-all: submodule dotfiles pip virtualenv virtualenvwrapper venv
+all: packages submodule dotfiles pip virtualenv virtualenvwrapper venv
+
+.PHONY: packages
+packages:
+	sudo apt-get install gcc libjpeg-dev make python python-dev zlib1g-dev
 
 .PHONY: submodule
 submodule:
