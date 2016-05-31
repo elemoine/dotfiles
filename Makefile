@@ -3,7 +3,7 @@ all: packages submodule dotfiles pip virtualenv virtualenvwrapper venv
 
 .PHONY: packages
 packages:
-	sudo apt-get install gcc libjpeg-dev make python python-dev zlib1g-dev
+	sudo apt-get install -y gcc libjpeg-dev python python-dev zlib1g-dev vim-gtk tmux
 
 .PHONY: submodule
 submodule:
