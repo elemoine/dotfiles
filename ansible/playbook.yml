@@ -1,5 +1,6 @@
 - hosts: all
-  remote_user: root
+  become: yes
+  become_user: root
   tasks:
   - name: ensure make is at the latest version
     apt: name=make state=latest
