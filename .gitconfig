@@ -41,3 +41,5 @@
     autosetupmerge = false
 [push]
 	default = nothing
+[gitreview]
+    username=elemoine
