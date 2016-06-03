@@ -1,0 +1,26 @@
+- hosts: all
+  remote_user: root
+  tasks:
+  - name: ensure make is at the latest version
+    apt: name=make state=latest
+  - name: ensure gcc is at the latest version
+    apt: name=gcc state=latest
+  - name: ensure libjpeg-dev is at the latest version
+    apt: name=libjpeg-dev state=latest
+  - name: ensure python is at the latest version
+    apt: name=python state=latest
+  - name: ensure python-dev is at the latest version
+    apt: name=python-dev state=latest
+  - name: ensure zlib1g-dev is at the latest version
+    apt: name=zlib1g-dev state=latest
+  - name: ensure vim-gtk is at the latest version
+    apt: name=vim-gtk state=latest
+  - name: ensure tmux is at the latest version
+    apt: name=tmux state=latest
+
+- hosts: all
+  tasks:
+  - name: ensure dotfiles Git repo is cloned
+    git: repo=git@github.com:elemoine/dotfiles.git dest="{{ ansible_env.HOME }}/dotfiles" update=yes
+  - name: ensure dotfiles are installed
+    make: chdir="{{ ansible_env.HOME }}/dotfiles" target=all
