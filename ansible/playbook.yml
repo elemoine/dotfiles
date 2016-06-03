@@ -18,6 +18,8 @@
     apt: name=vim-gtk state=latest
   - name: ensure tmux is at the latest version
     apt: name=tmux state=latest
+  - name: ensure curl is at the latest version
+    apt: name=curl state=latest
 
 - hosts: all
   tasks:
