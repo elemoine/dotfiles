@@ -1,9 +1,5 @@
 .PHONY: all
-all: packages submodule dotfiles pip virtualenv virtualenvwrapper venv
-
-.PHONY: packages
-packages:
-	sudo apt-get install -y gcc libjpeg-dev python python-dev zlib1g-dev vim-gtk tmux
+all: submodule dotfiles pip virtualenv virtualenvwrapper venv
 
 .PHONY: submodule
 submodule:
