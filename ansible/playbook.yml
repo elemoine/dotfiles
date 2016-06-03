@@ -22,6 +22,6 @@
 - hosts: all
   tasks:
   - name: ensure dotfiles Git repo is cloned
-    git: repo=git@github.com:elemoine/dotfiles.git dest="{{ ansible_env.HOME }}/dotfiles" update=yes
+    git: repo=git@github.com:elemoine/dotfiles.git dest="{{ ansible_env.HOME }}/dotfiles" update=yes accept_hostkey=yes
   - name: ensure dotfiles are installed
     make: chdir="{{ ansible_env.HOME }}/dotfiles" target=all
