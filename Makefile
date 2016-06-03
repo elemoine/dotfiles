@@ -7,11 +7,11 @@ submodule:
 
 .PHONY: dotfiles
 dotfiles:
-	python install-dotfiles.py
+	/usr/bin/python install-dotfiles.py
 
 .PHONY: pip
 pip: get-pip.py
-	python get-pip.py --user
+	/usr/bin/python get-pip.py --user
 
 get-pip.py:
 	curl -O https://bootstrap.pypa.io/get-pip.py
