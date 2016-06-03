@@ -40,6 +40,10 @@ puppet: init.pp
 ansible:
 	(cd ansible && ansible-playbook -i hosts.ini playbook.yml)
 
+.PHONY: packages
+packages:
+	sudo apt-get install -y gcc libjpeg-dev python python-dev zlib1g-dev vim-gtk tmux
+
 .PHONY: clean
 clean:
 	rm -rf $(HOME)/.virtualenvs/main
