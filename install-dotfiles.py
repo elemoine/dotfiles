@@ -19,12 +19,13 @@ def create_symlink(dotname, directory=''):
 
 exclude = ['*.sw*', '.git', '*.un~', 'install-dotfiles.py',
     '.gitmodules', 'Makefile', 'build', 'requirements.txt',
-    'init.pp', '.config', 'ansible', 'get-pip.py']
+    'init.pp', '.config', 'ansible', 'get-pip.py', '.ssh']
 
 for f in os.listdir('.'):
     if not any(fnmatch.fnmatch(f, p) for p in exclude):
         create_symlink(f)
 
-for f in os.listdir('.config'):
-    if not any(fnmatch.fnmatch(f, p) for p in exclude):
-        create_symlink(f, '.config')
+for configdir in ('.config', '.ssh'):
+    for f in os.listdir(configdir):
+        if not any(fnmatch.fnmatch(f, p) for p in exclude):
+            create_symlink(f, configdir)
