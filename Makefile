@@ -11,7 +11,7 @@ dotfiles:
 
 .PHONY: pip
 pip: get-pip.py
-	/usr/bin/python get-pip.py --user
+	/usr/bin/python get-pip.py --user -I
 
 get-pip.py:
 	curl -O https://bootstrap.pypa.io/get-pip.py
