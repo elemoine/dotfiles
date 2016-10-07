@@ -12,3 +12,18 @@ alias skb='setxkbmap -model pc105 -layout "fr,fr" -variant "bepo,oss" -option "g
 alias screenshot='gnome-screenshot --area'
 alias setdp='sudo xrandr --output DP1 --primary --right-of eDP1'
 alias unsetdp='sudo xrandr --output DP1 --off'
+
+#
+# Create symlink ~/.ssh/ssh_auth_sock to the ssh-agent socket. This is
+# used for tmux sessions.
+#
+# See these links for more information:
+#
+# https://gist.github.com/bcomnes/e756624dc1d126ba2eb6
+# http://techblog.appnexus.com/2011/managing-ssh-sockets-in-gnu-screen/
+# https://gist.github.com/martijnvermaat/8070533
+# http://stackoverflow.com/questions/21378569/how-to-auto-update-ssh-agent-environment-variables-when-attaching-to-existing-tm
+#
+if [[ -S $SSH_AUTH_SOCK && ! -h $SSH_AUTH_SOCK ]]; then
+    ln -sf $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock
+fi
