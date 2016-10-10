@@ -450,3 +450,20 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+
+-- {{{ Custom stuff [ELE]
+-- inspired by the run_once function proposed in
+-- https://awesome.naquadah.org/wiki/Autostart
+function run_once(prg, arg_string, pname)
+    if not pname then
+       pname = prg
+    end
+    if not arg_string then
+        awful.util.spawn_with_shell("pgrep -u elemoine '" .. pname .. "' || (" .. prg .. ")")
+    else
+        awful.util.spawn_with_shell("pgrep -u elemoine '" .. pname .. "' || (" .. prg .. " " .. arg_string .. ")")
+    end
+end
+run_once("nm-applet")
+run_once("firefox", "-P main")
+-- }}}
