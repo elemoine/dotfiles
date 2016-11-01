@@ -31,11 +31,6 @@ venv: $(HOME)/.virtualenvs/main
 $(HOME)/.virtualenvs/main:
 	$(HOME)/.local/bin/virtualenv $@
 
-.PHONY: puppet
-puppet: init.pp
-	puppet parser validate $< && \
-	sudo FACTER_homedir=$(HOME) FACTER_cwd=$(shell pwd) FACTER_user=$(shell whoami) puppet apply $<
-
 .PHONY: ansible
 ansible:
 	(cd ansible && ansible-playbook -i hosts.ini playbook.yml)
