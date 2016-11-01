@@ -43,3 +43,7 @@
 	default = nothing
 [gitreview]
     username=elemoine
+[merge "ours"]  # http://www.git-attitude.fr/2014/11/28/preserver-certains-fichiers-au-merge/
+    driver = true
+[url "git@github.com:"]
+    insteadOf = gh:
