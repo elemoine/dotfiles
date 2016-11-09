@@ -13,6 +13,7 @@ alias screenshot='gnome-screenshot --area'
 alias setdp='sudo xrandr --output DP1 --primary --right-of eDP1'
 alias unsetdp='sudo xrandr --output DP1 --off'
 alias audio='unity-control-center sound'
+alias sd='sudo shutdown -h now'
 
 #
 # Create symlink ~/.ssh/ssh_auth_sock to the ssh-agent socket. This is
