@@ -180,3 +180,10 @@ bar {
 # Please remove the following exec line:
 #######################################################################
 #exec i3-config-wizard
+
+#
+# My specific stuff begins here
+#
+
+# Layout out for new containers
+workspace_layout tabbed
