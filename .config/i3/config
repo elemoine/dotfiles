@@ -187,3 +187,6 @@ bar {
 
 # Layout out for new containers
 workspace_layout tabbed
+
+# Assign Firefox to workspace 2
+assign [class="^Firefox$"] 2
