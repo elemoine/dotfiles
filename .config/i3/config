@@ -191,8 +191,8 @@ bar {
 # Layout out for new containers
 workspace_layout tabbed
 
-# Assign Firefox to workspace 2
-assign [class="^Firefox$"] 2
+# Start a terminal on workspace 1
+exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal'
 
-# Automatically start Firefox on i3 startup
-exec firefox -P main
+# Start Firefox on workspace 2
+exec --no-startup-id i3-msg 'workspace $ws2; exec firefox -P main; workspace $ws1'
