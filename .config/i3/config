@@ -190,3 +190,6 @@ workspace_layout tabbed
 
 # Assign Firefox to workspace 2
 assign [class="^Firefox$"] 2
+
+# Automatically start Firefox on i3 startup
+exec firefox -P main
