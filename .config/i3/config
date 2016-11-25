@@ -202,6 +202,7 @@ force_focus_wrapping yes
 # Cycle through workspaces
 bindsym $mod+p workspace prev
 bindsym $mod+n workspace next
+
 # Start a terminal on workspace 1
 exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal'
 
