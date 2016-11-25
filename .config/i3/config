@@ -196,6 +196,9 @@ workspace_layout tabbed
 # (effectively toggles with two outputs)
 bindsym $mod+m move workspace to output right
 
+# focus will always wrap
+force_focus_wrapping yes
+
 # Cycle through workspaces
 bindsym $mod+p workspace prev
 bindsym $mod+n workspace next
