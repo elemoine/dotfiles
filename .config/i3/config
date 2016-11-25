@@ -192,6 +192,13 @@ bar {
 # Layout out for new containers
 workspace_layout tabbed
 
+# Move the current workspace to the next output
+# (effectively toggles with two outputs)
+bindsym $mod+m move workspace to output right
+
+# Cycle through workspaces
+bindsym $mod+p workspace prev
+bindsym $mod+n workspace next
 # Start a terminal on workspace 1
 exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal'
 
