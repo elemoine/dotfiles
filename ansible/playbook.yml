@@ -21,7 +21,7 @@
   - name: ensure curl is at the latest version
     apt: name=curl state=latest
 
-- hosts: remote
+- hosts: all
   tasks:
   - name: ensure dotfiles Git repo is cloned
     git: repo=git@github.com:elemoine/dotfiles.git dest="{{ ansible_env.HOME }}/dotfiles" update=yes accept_hostkey=yes
