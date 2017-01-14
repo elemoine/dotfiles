@@ -207,7 +207,7 @@ bindsym $mod+n workspace next
 exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal'
 
 # Start Firefox on workspace 2
-exec --no-startup-id i3-msg 'workspace $ws2; exec firefox -P main; workspace $ws1'
+exec --no-startup-id i3-msg 'workspace $ws2; exec $HOME/soft/firefox/firefox; workspace $ws1'
 
 # Start Network Manager applet
 exec nm-applet
