@@ -3,7 +3,7 @@
     attributesfile = "~/.gitattributes"
 [user]
     name = Éric Lemoine
-    email = elemoine@mirantis.com
+    email = eric.lemoine@oslandia.com
 [init]
     # does not work with git 1.7.0.4
     templatedir = ~/.git_template
