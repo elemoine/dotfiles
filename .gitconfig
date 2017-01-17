@@ -1,5 +1,6 @@
 [core]
     excludesfile = "~/.gitignore_"
+    attributesfile = "~/.gitattributes"
 [user]
     name = Éric Lemoine
     email = elemoine@mirantis.com
@@ -47,3 +48,5 @@
     driver = true
 [url "git@github.com:"]
     insteadOf = gh:
+[diff "odf"]
+    textconv = odt2txt
