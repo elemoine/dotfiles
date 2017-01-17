@@ -10,10 +10,10 @@ export LESS="-RXF"
 alias l='ls --color -l'
 alias skb='setxkbmap -model pc105 -layout "fr,fr" -variant "bepo,oss" -option "grp:shifts_toggle,grp_led:scroll"'
 alias screenshot='gnome-screenshot --area'
-alias setdp='sudo xrandr --output DP1 --primary --right-of eDP1'
-alias unsetdp='sudo xrandr --output DP1 --off'
 alias audio='unity-control-center sound'
 alias sd='sudo shutdown -h now'
+alias lb='sudo ifup wlp4s0=livebox'
+alias dl='sudo ifup wlp4s0=dlink'
 
 #
 # Create symlink ~/.ssh/ssh_auth_sock to the ssh-agent socket. This is
