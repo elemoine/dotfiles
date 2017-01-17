@@ -37,7 +37,7 @@ ansible:
 
 .PHONY: packages
 packages:
-	sudo apt-get install -y gcc libjpeg-dev python python-dev zlib1g-dev vim-gtk tmux curl
+	sudo apt-get install -y gcc libjpeg-dev python python-dev zlib1g-dev vim-gtk tmux curl odt2txt i3
 
 .PHONY: clean
 clean:
