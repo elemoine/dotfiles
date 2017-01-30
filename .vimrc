@@ -126,6 +126,9 @@ map <Leader>y <Plug>(easymotion-prefix)
 " http://dmerej.info/blog/index.php/?post/2016/04/30/Vim-and-cwd
 map <Leader>cd :lcd %:h<CR>
 
+" https://github.com/vim-scripts/SQLUtilities
+let g:sqlutil_align_comma=1
+
 " UI
 colorscheme torte
 

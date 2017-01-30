@@ -58,3 +58,9 @@
 [submodule ".vim/bundle/vim-go"]
 	path = .vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule ".vim/bundle/SQLUtilities"]
+	path = .vim/bundle/SQLUtilities
+	url = https://github.com/vim-scripts/SQLUtilities
+[submodule ".vim/bundle/Align"]
+	path = .vim/bundle/Align
+	url = https://github.com/vim-scripts/Align
