@@ -15,6 +15,8 @@ alias sd='sudo shutdown -h now'
 alias lb='sudo ifup wlp4s0=livebox'
 alias dl='sudo ifup wlp4s0=dlink'
 
+xset b off
+
 #
 # Create symlink ~/.ssh/ssh_auth_sock to the ssh-agent socket. This is
 # used for tmux sessions.
