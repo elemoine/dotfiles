@@ -132,6 +132,10 @@ let g:sqlutil_align_comma=1
 " UI
 colorscheme torte
 
+" status line
+" https://github.com/tpope/vim-fugitive
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
 " bépo related
 " http://bepo.fr/wiki/Vim
 noremap w <C-w>
