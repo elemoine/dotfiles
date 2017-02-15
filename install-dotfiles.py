@@ -14,7 +14,7 @@ def create_symlink(dotname, directory=''):
     elif os.path.isdir(path):
         shutil.rmtree(path)
     os.symlink(os.path.abspath(os.path.join(directory, dotname)), path)
-    print 'create link for %s' % (path)
+    print('create link for %s' % path)
 
 
 exclude = ['*.sw*', '.git', '*.un~', 'install-dotfiles.py',

@@ -7,11 +7,11 @@ submodule:
 
 .PHONY: dotfiles
 dotfiles:
-	/usr/bin/python install-dotfiles.py
+	/usr/bin/python3 install-dotfiles.py
 
 .PHONY: pip
 pip: get-pip.py
-	/usr/bin/python get-pip.py --user -I
+	/usr/bin/python3 get-pip.py --user -I
 
 get-pip.py:
 	curl -O https://bootstrap.pypa.io/get-pip.py
@@ -37,7 +37,7 @@ ansible:
 
 .PHONY: packages
 packages:
-	sudo apt-get install -y gcc libjpeg-dev python python-dev zlib1g-dev vim-gtk tmux curl odt2txt i3
+	sudo apt-get install -y gcc libjpeg-dev python python-dev python3 python3-dev zlib1g-dev vim-gtk tmux curl odt2txt
 
 .PHONY: clean
 clean:
