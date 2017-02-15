@@ -8,6 +8,8 @@ source ${HOME}/.git-completion.bash
 source ${HOME}/.virsh-completion.bash
 
 if [ -f ${HOME}/.local/bin/virtualenvwrapper.sh ]; then
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+    export VIRTUALENVWRAPPER_VIRTUALENV=${HOME}/.local/bin/virtualenv
     export WORKON_HOME=${HOME}/.virtualenvs
     export PROJECT_HOME=${HOME}/src
     source ${HOME}/.local/bin/virtualenvwrapper.sh
