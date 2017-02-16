@@ -136,6 +136,10 @@ colorscheme torte
 " https://github.com/tpope/vim-fugitive
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
+" exclude patters for EditorConfig
+" https://github.com/editorconfig/editorconfig-vim
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+
 " bépo related
 " http://bepo.fr/wiki/Vim
 noremap w <C-w>
