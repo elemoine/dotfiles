@@ -209,7 +209,7 @@ bindsym $mod+n workspace next
 exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal; sleep 3'
 
 # Start Firefox on workspace 2
-exec --no-startup-id i3-msg 'workspace $ws2; exec $HOME/soft/firefox/firefox; sleep 3'
+exec --no-startup-id i3-msg 'workspace $ws2; exec $HOME/soft/firefox/firefox -P default; sleep 3'
 
 # Start Thunderbird on workspace 3
 exec --no-startup-id i3-msg 'workspace $ws3; exec $HOME/soft/thunderbird/thunderbird; sleep 3'
