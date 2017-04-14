@@ -8,15 +8,12 @@
     # does not work with git 1.7.0.4
     templatedir = ~/.git_template
 [color]
-    status = auto
-    diff = auto
-    branch = auto
-    interactive = auto
+    ui = auto
 [merge]
 	tool = vimdiff
 [alias]
     c = commit
-    ca = commit --amend
+    ca = commit --amend --no-edit
     cm = commit --message
     cf = commit --fixup
     a = add
@@ -37,6 +34,7 @@
     co = checkout
     pr = pull-request
     rv = review
+    cp = cherry-pick
     ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
 [branch]
     autosetupmerge = false
@@ -44,6 +42,8 @@
 	default = nothing
 [gitreview]
     username=elemoine
+[grep]
+    extendedRegexp=true
 [merge "ours"]  # http://www.git-attitude.fr/2014/11/28/preserver-certains-fichiers-au-merge/
     driver = true
 [url "git@github.com:"]
