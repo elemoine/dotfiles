@@ -67,3 +67,6 @@
 [submodule ".vim/bundle/editorconfig-vim"]
 	path = .vim/bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule ".vim/bundle/vim-mapfile"]
+	path = .vim/bundle/vim-mapfile
+	url = https://github.com/walkermatt/vim-mapfile.git
