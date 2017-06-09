@@ -69,9 +69,9 @@ nnoremap <leader><space> :noh<cr>
 " handle long lines
 " from http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 set wrap
-set textwidth=79
+set textwidth=100
 set formatoptions=qrn1
-set colorcolumn=85 " unknown to vim 7.2
+set colorcolumn=100 " unknown to vim 7.2
 
 " alias unnamed register to the + register
 " requires vim-gtk
