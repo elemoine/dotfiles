@@ -205,6 +205,18 @@ force_focus_wrapping yes
 bindsym $mod+p workspace prev
 bindsym $mod+n workspace next
 
+set $firefox "$HOME/soft/firefox-nightly/firefox -P default"
+set $thunderbird "$HOME/soft/thunderbird/thunderbird"
+
+set $mode_launch Launch: [f]irefox [t]hunderbird
+bindsym $mod+o mode "$mode_launch"
+
+mode "$mode_launch" {
+    bindsym f exec --no-startup-id $firefox
+    bindsym t exec --no-startup-id $thunderbird
+    bindsym Return mode "default"
+}
+
 # Start a terminal on workspace 1
 exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal; sleep 3'
 
