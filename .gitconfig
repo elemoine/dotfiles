@@ -19,7 +19,7 @@
     a = add
     s = status
     rh = reset --hard
-    f = fetch
+    f = fetch --prune
     m = merge
     mf = merge --ff-only
     r = rebase
