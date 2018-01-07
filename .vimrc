@@ -109,6 +109,14 @@ autocmd BufWritePost *.py call Flake8()
 " taken from the https://github.com/tpope/vim-fugitive README
 autocmd QuickFixCmdPost *grep* cwindow
 
+" fzf
+" https://github.com/junegunn/fzf
+" https://statico.github.io/vim3.html
+set rtp+=~/.fzf
+nmap ; :Buffers<CR>
+nmap <Leader>t :Files<CR>
+nmap <Leader>r :Tags<CR>
+
 let g:syntastic_javascript_checkers = ['gjslint']
 let g:syntastic_javascript_gjslint_conf = "-strict --custom_jsdoc_tags=todo"
 

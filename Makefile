@@ -35,9 +35,19 @@ $(HOME)/.virtualenvs/main:
 ansible:
 	(cd ansible && ansible-playbook -i hosts.ini playbook.yml)
 
+.PHONY: fzf
+fzf: $(HOME)/.fzf/bin/fzf
+
+$(HOME)/.fzf/bin/fzf: $(HOME)/.fzf/install
+	(cd $(dir $<) && ./install --bin)
+
+$(HOME)/.fzf/install:
+	rm -rf $(dir $@)
+	git clone --depth 1 https://github.com/junegunn/fzf.git $(dir $@)
+
 .PHONY: packages
 packages:
-	sudo apt-get install -y gcc libjpeg-dev python python-dev python3 python3-dev zlib1g-dev vim-gtk tmux curl odt2txt
+	sudo apt-get install -y gcc libjpeg-dev python python-dev python3 python3-dev zlib1g-dev vim-gtk tmux curl odt2txt sylversearcher-ag
 
 .PHONY: clean
 clean:

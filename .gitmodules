@@ -67,3 +67,6 @@
 [submodule ".vim/bundle/vim-mapfile"]
 	path = .vim/bundle/vim-mapfile
 	url = https://github.com/walkermatt/vim-mapfile.git
+[submodule ".vim/bundle/fzf.vim"]
+	path = .vim/bundle/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
