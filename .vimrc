@@ -117,6 +117,12 @@ nmap ; :Buffers<CR>
 nmap <Leader>t :Files<CR>
 nmap <Leader>r :Tags<CR>
 
+" Use ag with Ack
+" https://vimawesome.com/plugin/ack-vim
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 let g:syntastic_javascript_checkers = ['gjslint']
 let g:syntastic_javascript_gjslint_conf = "-strict --custom_jsdoc_tags=todo"
 
