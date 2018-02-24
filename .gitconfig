@@ -50,3 +50,5 @@
     insteadOf = gh:
 [diff "odf"]
     textconv = odt2txt
+[advice]
+	ignoredHook = false
