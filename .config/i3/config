@@ -207,12 +207,12 @@ bindsym $mod+n workspace next
 
 set $firefox "$HOME/soft/firefox-nightly/firefox -P default"
 
-set $mode_launch Launch: [f]irefox [t]hunderbird
+set $mode_launch Launch: [f]irefox [e]volution
 bindsym $mod+o mode "$mode_launch"
 
 mode "$mode_launch" {
     bindsym f exec --no-startup-id $firefox
-    bindsym t exec --no-startup-id evolution
+    bindsym e exec --no-startup-id evolution
     bindsym Return mode "default"
 }
 
