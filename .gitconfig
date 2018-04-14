@@ -35,6 +35,8 @@
     pr = pull-request
     rv = review
     cp = cherry-pick
+    ac = "!git add $1 && git commit -m \"Add $1\""
+    uc = "!git add $1 && git commit -m \"Update $1\""
     ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
 [branch]
     autosetupmerge = false
