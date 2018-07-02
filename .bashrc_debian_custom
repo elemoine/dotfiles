@@ -50,5 +50,5 @@ function spass {
     password=$(find . -name '*.gpg' | fzf)
     popd
     password=${password%.*}
-    pass show -c $password
+    pass show $password
 }
