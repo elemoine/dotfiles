@@ -46,9 +46,9 @@ export FZF_DEFAULT_OPTS='
 
 # Function to search por passwords in my password store
 function spass {
-    pushd ${HOME}/.password-store
+    pushd ${HOME}/.password-store > /dev/null
     password=$(find . -name '*.gpg' | fzf)
-    popd
+    popd > /dev/null
     password=${password%.*}
-    pass show $password
+    pass show $@ $password
 }
