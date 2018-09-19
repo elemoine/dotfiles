@@ -47,7 +47,7 @@ $(HOME)/.fzf/install:
 
 .PHONY: packages
 packages:
-	sudo apt-get install -y gcc libjpeg-dev python python-dev python3 python3-dev zlib1g-dev vim-gtk tmux curl odt2txt sylversearcher-ag
+	sudo apt-get install -y gcc libjpeg-dev python python-dev python3 python3-dev zlib1g-dev vim-gtk tmux curl odt2txt sylversearcher-ag xautolock i3lock
 
 .PHONY: clean
 clean:

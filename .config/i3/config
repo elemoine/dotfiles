@@ -207,12 +207,13 @@ bindsym $mod+n workspace next
 
 set $firefox "$HOME/soft/firefox-nightly/firefox -P default"
 
-set $mode_launch Launch: [f]irefox [e]volution
+set $mode_launch Launch: [f]irefox [e]volution [i]3lock
 bindsym $mod+o mode "$mode_launch"
 
 mode "$mode_launch" {
     bindsym f exec --no-startup-id $firefox
     bindsym e exec --no-startup-id evolution
+    bindsym i exec --no-startup-id i3lock
     bindsym Return mode "default"
 }
 
@@ -233,3 +234,6 @@ exec --no-startup-id i3-msg 'workspace $ws5; exec linphone; sleep 3'
 
 # Display worskpace 1 at startup
 exec --no-startup-id i3-msg 'workspace $ws1'
+
+# Start xautolock
+exec --no-startup-id xautolock -time 5 -locker 'i3lock' &
