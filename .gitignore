@@ -1,4 +1,5 @@
 .vim/ftplugin
+.vim/black
 .un~
 *.pyc
 vimrc
