@@ -149,6 +149,9 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " https://github.com/editorconfig/editorconfig-vim
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
+"black
+let g:black_linelength = 100
+
 " bépo related
 " http://bepo.fr/wiki/Vim
 noremap w <C-w>
