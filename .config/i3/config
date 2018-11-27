@@ -207,7 +207,7 @@ bindsym $mod+n workspace next
 
 set $firefox "$HOME/soft/firefox-nightly/firefox -P default"
 
-set $mode_launch Launch: [f]irefox [e]volution [i]3lock
+set $mode_launch Launch: [f]irefox [c]laws [i]3lock
 bindsym $mod+o mode "$mode_launch"
 
 mode "$mode_launch" {
