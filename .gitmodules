@@ -73,3 +73,6 @@
 [submodule ".vim/bundle/black"]
 	path = .vim/bundle/black
 	url = https://github.com/ambv/black
+[submodule "udev-media-automount"]
+	path = udev-media-automount
+	url = https://github.com/Ferk/udev-media-automount
