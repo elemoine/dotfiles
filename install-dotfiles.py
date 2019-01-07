@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 import fnmatch
 import shutil
@@ -21,11 +21,15 @@ exclude = ['*.sw*', '.git', '*.un~', 'install-dotfiles.py',
     '.gitmodules', 'Makefile', 'build', 'requirements.txt',
     '.config', 'ansible', 'get-pip.py', '.ssh', '.gnupg']
 
-for f in os.listdir('.'):
-    if not any(fnmatch.fnmatch(f, p) for p in exclude):
-        create_symlink(f)
+for e in os.scandir('.'):
+    if not e.is_file():
+        continue
+    if not any(fnmatch.fnmatch(e.name, p) for p in exclude):
+        create_symlink(e.name)
 
 for configdir in ('.config', '.ssh', '.gnupg'):
-    for f in os.listdir(configdir):
-        if not any(fnmatch.fnmatch(f, p) for p in exclude):
-            create_symlink(f, configdir)
+    for e in os.scandir(configdir):
+        if not e.is_dir():
+            continue
+        if not any(fnmatch.fnmatch(e.name, p) for p in exclude):
+            create_symlink(e.name, configdir)
