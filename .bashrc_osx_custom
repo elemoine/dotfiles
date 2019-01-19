@@ -1,9 +1,0 @@
-# http://stackoverflow.com/questions/1550288/mac-os-x-terminal-colors
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-
-# JSLint fails in vim without this
-# https://github.com/hallettj/jslint.vim/issues/31
-export JS_CMD="/usr/local/bin/node"
-
-alias l='ls -l'
