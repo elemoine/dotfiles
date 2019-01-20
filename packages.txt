@@ -29,6 +29,7 @@ lightdm
 lightdm-gtk-greeter
 linux-headers
 npm
+odt2txt
 openssh
 pacman-contrib
 pass
