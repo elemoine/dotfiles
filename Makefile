@@ -1,3 +1,5 @@
+SHELL:=/bin/bash
+
 .PHONY: all
 all: submodule dotfiles pip virtualenv virtualenvwrapper venv
 
