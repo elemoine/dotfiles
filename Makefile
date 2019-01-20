@@ -47,7 +47,11 @@ $(HOME)/.fzf/install:
 
 .PHONY: packages
 packages:
-	sudo apt-get install -y gcc libjpeg-dev python python-dev python3 python3-dev zlib1g-dev vim-gtk tmux curl odt2txt sylversearcher-ag xautolock i3lock
+	sudo pacman -S --needed $$(cat packages.txt)
+
+.PHONY: packages-list
+packages-list:
+	comm -23 <(pacman -Qqett | sort) <(pacman -Qqg base -g base-devel | sort | uniq) > packages.txt
 
 .PHONY: clean
 clean:
