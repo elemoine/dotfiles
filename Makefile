@@ -53,7 +53,7 @@ packages:
 
 .PHONY: packages-list
 packages-list:
-	comm -23 <(pacman -Qqett | sort) <(pacman -Qqg base -g base-devel | sort | uniq) > packages.txt
+	comm -23 <(pacman -Qqe | sort) <(pacman -Qqg base -g base-devel | sort | uniq) > packages.txt
 
 .PHONY: clean
 clean:
