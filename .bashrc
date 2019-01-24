@@ -1,3 +1,10 @@
+#
+# ~/.bashrc - startup file for Bash interactive shell
+#
+# References:
+# - https://github.com/mloskot/archlinux-config/blob/master/home/mloskot/.bashrc
+# - https://wiki.archlinux.org/index.php/Color_Bash_Prompt
+#
 if [[ $- != *i* ]]; then
     # Running non-interactively, don't do anything
     return
