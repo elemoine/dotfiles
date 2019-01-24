@@ -23,8 +23,6 @@ exclude = ['*.sw*', '.git', '*.un~', 'install-dotfiles.py',
     'packages.txt']
 
 for e in os.scandir('.'):
-    if not e.is_file():
-        continue
     if not any(fnmatch.fnmatch(e.name, p) for p in exclude):
         create_symlink(e.name)
 
