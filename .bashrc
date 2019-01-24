@@ -58,7 +58,7 @@ GIT_PS1_SHOWUPSTREAM="verbose"
 
 # set prompt
 case "$TERM" in
-xterm-color|xterm-termite)
+xterm*|screen*)
     PS1='[\u@\h \[\033[1;35m\]\W$(__git_ps1 " \[\033[1;34m\](%s)")\[\033[0m\]]\$ '
     ;;
 *)
