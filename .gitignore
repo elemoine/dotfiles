@@ -4,4 +4,3 @@
 *.pyc
 vimrc
 get-pip.py
-ansible/playbook.retry

@@ -33,10 +33,6 @@ venv: $(HOME)/.virtualenvs/main
 $(HOME)/.virtualenvs/main:
 	$(HOME)/.local/bin/virtualenv $@
 
-.PHONY: ansible
-ansible:
-	(cd ansible && ansible-playbook -i hosts.ini playbook.yml)
-
 .PHONY: fzf
 fzf: $(HOME)/.fzf/bin/fzf
 
