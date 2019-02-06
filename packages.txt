@@ -14,6 +14,7 @@ flameshot
 gimp
 git
 git-crypt
+google-chrome
 grub
 gvim
 hexchat
@@ -50,6 +51,7 @@ sane
 strace
 system-config-printer
 termite
+tk
 tmux
 ttf-bitstream-vera
 unzip
