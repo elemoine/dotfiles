@@ -51,6 +51,10 @@ packages:
 packages-list:
 	comm -23 <(pacman -Qqe | sort) <(pacman -Qqg base -g base-devel | sort | uniq) > packages.txt
 
+.PHONY: crontab
+crontab:
+	crontab crontab
+
 .PHONY: clean
 clean:
 	rm -rf $(HOME)/.virtualenvs/main

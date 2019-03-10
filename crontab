@@ -1,0 +1,5 @@
+# every day at 12:00 and 18:00
+0 12,18 * * * /home/elemoine/scripts/backup_home.sh
+
+# every monday and friday at 13:00
+0 13 * * 1,5 /home/elemoine/scripts/backup_nextcloudpi.sh
