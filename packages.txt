@@ -1,7 +1,10 @@
 aspell-fr
+autojump
 bash-completion
+bind-tools
 bogofilter
 claws-mail
+cronie
 cups
 dillo
 dmenu
@@ -26,12 +29,15 @@ i3status
 iw
 libical
 libreoffice-fresh
+librsync
 lightdm
 lightdm-gtk-greeter
 linux-headers
+nmap
 npm
 odt2txt
 openssh
+p7zip
 pacman-contrib
 pass
 pavucontrol
@@ -52,7 +58,10 @@ strace
 system-config-printer
 termite
 tk
+tldr
 tmux
+traceroute
+transmission-cli
 ttf-bitstream-vera
 unzip
 vagrant
