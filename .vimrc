@@ -14,6 +14,11 @@ filetype off
 call pathogen#infect()
 filetype plugin indent on
 
+" vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
+call plug#end()
+
 " change my <leader> key
 let mapleader=","
 
