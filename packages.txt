@@ -1,3 +1,4 @@
+arandr
 aspell-fr
 autojump
 bash-completion
@@ -19,7 +20,6 @@ git
 git-crypt
 google-chrome
 grub
-gvim
 hexchat
 hplip
 i3blocks
@@ -33,12 +33,14 @@ librsync
 lightdm
 lightdm-gtk-greeter
 linux-headers
+neovim
 nmap
 npm
 odt2txt
 openssh
 p7zip
 pacman-contrib
+parallel
 pass
 pavucontrol
 postgis
