@@ -76,7 +76,7 @@ if [ -f ${HOME}/.local/bin/virtualenvwrapper.sh ]; then
 fi
 
 export PYTHONSTARTUP=${HOME}/.pythonrc.py
-export EDITOR=vim
+export EDITOR=nvim
 
 export PATH=${HOME}/.local/bin:${HOME}/scripts:${PATH}
 
