@@ -17,6 +17,7 @@ filetype plugin indent on
 " vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
+Plug 'ambv/black'
 call plug#end()
 
 " change my <leader> key
@@ -156,6 +157,7 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
 "black
 let g:black_linelength = 100
+let g:black_virtualenv = '~/.virtualenvs/main'
 
 " bépo related
 " http://bepo.fr/wiki/Vim

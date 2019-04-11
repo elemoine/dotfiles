@@ -4,3 +4,5 @@ rst2pdf
 git-review
 tox
 vim_bridge
+black
+pynvim
