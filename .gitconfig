@@ -35,15 +35,11 @@
     pr = pull-request
     rv = review
     cp = cherry-pick
-    ac = "!git add $1 && git commit -m \"Add $1\""
-    uc = "!git add $1 && git commit -m \"Update $1\""
     ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
 [branch]
     autosetupmerge = false
 [push]
 	default = nothing
-[gitreview]
-    username=elemoine
 [grep]
     extendedRegexp=true
 [merge "ours"]  # http://www.git-attitude.fr/2014/11/28/preserver-certains-fichiers-au-merge/
