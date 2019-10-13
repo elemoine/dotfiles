@@ -2,12 +2,14 @@ arandr
 aspell-fr
 astyle
 autojump
+autopep8
 bash-completion
 bind-tools
 bogofilter
 claws-mail
 cronie
 cups
+dia
 dillo
 dmenu
 dmidecode
@@ -34,6 +36,8 @@ inotify-tools
 intel-ucode
 iw
 jq
+keybase
+keybase-gui
 libcurl-compat
 libical
 libreoffice-fresh
@@ -52,6 +56,9 @@ pacman-contrib
 parallel
 pass
 pavucontrol
+perl-yaml
+perl-yaml-tiny
+pmount
 postgis
 postgresql
 python
@@ -80,7 +87,11 @@ virtualbox
 virtualbox-guest-iso
 virtualbox-host-modules-arch
 wget
+wordnet-cli
+wordnet-common
+wordnet-tk
 wpa_supplicant
+x11-ssh-askpass
 xautolock
 xf86-input-synaptics
 xf86-video-vesa
@@ -92,7 +103,6 @@ xorg-fonts-encodings
 xorg-font-util
 xorg-iceauth
 xorg-luit
-xorg-mkfontdir
 xorg-mkfontscale
 xorg-server
 xorg-server-common
