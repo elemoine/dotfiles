@@ -7,9 +7,11 @@ bash-completion
 bind-tools
 bogofilter
 claws-mail
+coreutils
 cronie
 cups
 dia
+diffutils
 dillo
 dmenu
 dmidecode
@@ -18,6 +20,7 @@ dos2unix
 efibootmgr
 evince
 exfat-utils
+filesystem
 firefox
 flameshot
 gimp
@@ -28,6 +31,7 @@ google-chrome
 grub
 hexchat
 hplip
+htop
 i3blocks
 i3-gaps
 i3lock
@@ -38,6 +42,7 @@ iw
 jq
 keybase
 keybase-gui
+less
 libcurl-compat
 libical
 libreoffice-fresh
