@@ -223,6 +223,9 @@ exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal; sleep 3'
 # Start Firefox on workspace 2
 exec --no-startup-id i3-msg 'workspace $ws2; exec $HOME/soft/firefox-nightly/firefox -P default; sleep 3'
 
+# Start hexchat on workspace 4
+exec --no-startup-id i3-msg 'workspace $ws4; exec hexchat; sleep 3'
+
 # Display worskpace 1 at startup
 exec --no-startup-id i3-msg 'workspace $ws1'
 
