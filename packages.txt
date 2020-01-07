@@ -1,7 +1,6 @@
 arandr
 aspell-fr
 astyle
-autojump
 autopep8
 bash-completion
 bind-tools
@@ -27,7 +26,6 @@ gimp
 git
 git-crypt
 gnu-netcat
-google-chrome
 grub
 hexchat
 hplip
@@ -63,7 +61,6 @@ pass
 pavucontrol
 perl-yaml
 perl-yaml-tiny
-pmount
 postgis
 postgresql
 python
@@ -98,9 +95,6 @@ virtualbox
 virtualbox-guest-iso
 virtualbox-host-modules-arch
 wget
-wordnet-cli
-wordnet-common
-wordnet-tk
 wpa_supplicant
 x11-ssh-askpass
 xautolock
@@ -118,7 +112,6 @@ xorg-mkfontscale
 xorg-server
 xorg-server-common
 xorg-server-devel
-xorg-server-xdmx
 xorg-server-xephyr
 xorg-server-xnest
 xorg-server-xvfb
