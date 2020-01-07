@@ -207,12 +207,11 @@ bindsym $mod+n workspace next
 
 set $firefox "$HOME/soft/firefox-nightly/firefox -P default"
 
-set $mode_launch Launch: [f]irefox [c]laws [i]3lock
+set $mode_launch Launch: [f]irefox [i]3lock
 bindsym $mod+o mode "$mode_launch"
 
 mode "$mode_launch" {
     bindsym f exec --no-startup-id $firefox
-    bindsym c exec --no-startup-id claws-mail
     bindsym i exec --no-startup-id i3lock
     bindsym Return mode "default"
 }
