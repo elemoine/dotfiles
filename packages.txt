@@ -8,7 +8,6 @@ base
 bash-completion
 bind-tools
 bogofilter
-claws-mail
 cronie
 cups
 dhcpcd
