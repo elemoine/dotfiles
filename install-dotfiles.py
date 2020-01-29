@@ -28,7 +28,7 @@ for e in os.scandir('.'):
 
 for configdir in ('.config', '.ssh', '.gnupg'):
     for e in os.scandir(configdir):
-        if not e.is_dir():
+        if e.is_dir():
             continue
         if not any(fnmatch.fnmatch(e.name, p) for p in exclude):
             create_symlink(e.name, configdir)
