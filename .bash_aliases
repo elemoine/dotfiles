@@ -14,3 +14,5 @@ alias tb="nc termbin.com 9999"
 alias l='ls -l'
 
 alias vim='nvim'
+
+alias compose='docker-compose'
