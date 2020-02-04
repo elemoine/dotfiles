@@ -159,7 +159,7 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
 "black
-let g:black_linelength = 100
+let g:black_linelength = 120
 let g:black_virtualenv = '~/.virtualenvs/main'
 
 " bépo related
