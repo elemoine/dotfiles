@@ -20,6 +20,7 @@ Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 Plug 'fabi1cazenave/suckless.vim'
 Plug 'ambv/black'
 Plug 'scy/vim-timesheet'
+Plug 'fisadev/vim-isort'
 call plug#end()
 
 " change my <leader> key

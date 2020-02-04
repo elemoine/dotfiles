@@ -6,3 +6,4 @@ tox
 vim_bridge
 black
 pynvim
+isort
