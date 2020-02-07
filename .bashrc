@@ -109,9 +109,3 @@ fi
 if [ -f /etc/profile.d/autojump.bash ]; then
     source /etc/profile.d/autojump.bash
 fi
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/elemoine/soft/google-cloud-sdk/path.bash.inc' ]; then . '/home/elemoine/soft/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/elemoine/soft/google-cloud-sdk/completion.bash.inc' ]; then . '/home/elemoine/soft/google-cloud-sdk/completion.bash.inc'; fi
