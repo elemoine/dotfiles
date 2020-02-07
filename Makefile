@@ -22,6 +22,10 @@ get-pip.py:
 virtualenv:
 	$(HOME)/.local/bin/pip install --user --upgrade virtualenv
 
+.PHONY: vex
+vex:
+	$(HOME)/.local/bin/pip install --user --upgrade vex
+
 .PHONY: virtualenvwrapper
 virtualenvwrapper:
 	$(HOME)/.local/bin/pip install --user --upgrade virtualenvwrapper
