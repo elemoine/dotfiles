@@ -7,3 +7,4 @@ vim_bridge
 black
 pynvim
 isort
+docker-compose
