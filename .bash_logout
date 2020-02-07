@@ -5,4 +5,4 @@ if [ "$SHLVL" = 1 ]; then
     [ -x /usr/bin/clear_console ] && /usr/bin/clear_console -q
 fi
 
-rm ~/.gnupg/S.gpg-agent
+rm -f ~/.gnupg/S.gpg-agent
