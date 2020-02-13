@@ -85,8 +85,6 @@ fi
 export PYTHONSTARTUP=${HOME}/.pythonrc.py
 export EDITOR=nvim
 
-export PATH=${HOME}/.local/bin:${HOME}/scripts:${PATH}
-
 export CDPATH=.:${HOME}/src
 
 export LANG=en_US.UTF-8
