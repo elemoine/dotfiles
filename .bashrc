@@ -67,12 +67,19 @@ xterm*|screen*)
 esac
 
 
+# virtualenvwrapper
 if [ -f ${HOME}/.local/bin/virtualenvwrapper.sh ]; then
     export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
     export VIRTUALENVWRAPPER_VIRTUALENV=${HOME}/.local/bin/virtualenv
     export WORKON_HOME=${HOME}/.virtualenvs
     export PROJECT_HOME=${HOME}/src
     source ${HOME}/.local/bin/virtualenvwrapper.sh
+fi
+
+# vex
+# https://github.com/sashahart/vex
+if [ -n "$VIRTUAL_ENV" ]; then
+    PS1="($(basename $VIRTUAL_ENV)) $PS1"
 fi
 
 export PYTHONSTARTUP=${HOME}/.pythonrc.py
