@@ -4,7 +4,9 @@
 [user]
     name = Éric Lemoine
     email = eric_lemoine@ultimatesoftware.com
-    signingkey = 5BBF59DF126FADEF
+    signingkey = FFC64DBB96F156D2!
+[commit]
+    gpgsign = true
 [init]
     # does not work with git 1.7.0.4
     templatedir = ~/.git_template
@@ -13,21 +15,21 @@
 [merge]
 	tool = vimdiff
 [alias]
-    c = commit --gpg-sign
-    ca = commit --gpg-sign --amend --no-edit
-    cm = commit --gpg-sign --message
-    cf = commit --gpg-sign --fixup
+    c = commit
+    ca = commit --amend --no-edit
+    cm = commit --message
+    cf = commit --fixup
     a = add
     s = status
     rh = reset --hard
     f = fetch --prune
     m = merge
     mf = merge --ff-only
-    r = rebase --gpg-sign
-    ri = rebase --gpg-sign --interactive
-    rs = rebase --gpg-sign --interactive --autosquash
-    rc = rebase --gpg-sign --continue
-    ra = rebase --gpg-sign --abort
+    r = rebase
+    ri = rebase --interactive
+    rs = rebase --interactive --autosquash
+    rc = rebase --continue
+    ra = rebase --abort
     d = diff
     p = push
     pf = push --force
@@ -35,7 +37,7 @@
     co = checkout
     pr = pull-request
     rv = review
-    cp = cherry-pick --gpg-sign
+    cp = cherry-pick
     ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
 [branch]
     autosetupmerge = false
