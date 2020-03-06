@@ -78,9 +78,9 @@ nnoremap <leader><space> :noh<cr>
 " handle long lines
 " from http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 set wrap
-set textwidth=100
+set textwidth=88
 set formatoptions=qrn1
-set colorcolumn=100 " unknown to vim 7.2
+set colorcolumn=88 " unknown to vim 7.2
 
 " alias unnamed register to the + register
 " requires vim-gtk
@@ -159,7 +159,7 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
 "black
-let g:black_linelength = 120
+let g:black_linelength = 88
 let g:black_virtualenv = '~/.virtualenvs/main'
 
 " bépo related
