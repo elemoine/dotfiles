@@ -7,6 +7,8 @@
     signingkey = FFC64DBB96F156D2!
 [commit]
     gpgsign = true
+[tag]
+    gpgsign = true
 [init]
     # does not work with git 1.7.0.4
     templatedir = ~/.git_template
