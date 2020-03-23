@@ -22,14 +22,6 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
-# ensure $SSH_AUTH_SOCK is available at /tmp/ssh-agent-$USER-screen
-# see http://blog.onetechnical.com/2009/09/15/reconnect-ssh-agent-in-screen/
-if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != "/tmp/ssh-agent-$USER-screen" ]
-then
-    rm -f /tmp/ssh-agent-$USER-screen
-    ln -sf "$SSH_AUTH_SOCK" "/tmp/ssh-agent-$USER-screen"
-fi
-
 # Create symlink ~/.ssh/ssh_auth_sock to the ssh-agent socket. This is
 # used for tmux sessions.
 #
