@@ -4,7 +4,6 @@ arandr
 aspell-fr
 astyle
 autopep8
-base
 bash-completion
 bind-tools
 bogofilter
@@ -22,13 +21,13 @@ elinks
 evince
 evtest
 exfat-utils
+expac
 firefox
 flameshot
 gimp
 git
 git-crypt
 gnu-netcat
-google-chrome
 grub
 hexchat
 hplip
@@ -40,6 +39,7 @@ i3status
 inotify-tools
 intel-ucode
 iw
+jpegoptim
 jq
 keybase
 keybase-gui
@@ -59,6 +59,7 @@ nmap
 npm
 ntp
 odt2txt
+openresolv
 openssh
 p7zip
 pacman-contrib
@@ -71,7 +72,6 @@ postgis
 postgresql
 python
 python2
-python2-pycups
 python-docker
 python-gdal
 python-gobject
@@ -81,12 +81,12 @@ python-psycopg2
 python-pygments
 python-pyqt5
 python-reportlab
+python-sane
 python-yaml
 qgis
 remmina
 restic
 sane
-slack-desktop
 strace
 system-config-printer
 termite
@@ -102,6 +102,7 @@ vim
 virtualbox
 virtualbox-guest-iso
 virtualbox-host-modules-arch
+vlc
 vpnc
 wget
 wpa_supplicant
@@ -160,4 +161,3 @@ xorg-xwininfo
 xorg-xwud
 yarn
 zip
-zoom
