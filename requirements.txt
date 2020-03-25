@@ -1,7 +1,6 @@
 flake8
 docutils
 rst2pdf
-git-review
 tox
 vim_bridge
 black
