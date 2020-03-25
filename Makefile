@@ -49,7 +49,7 @@ packages:
 
 .PHONY: packages-list
 packages-list:
-	comm -23 <(pacman -Qqe | sort) <(pacman -Qqg base -g base-devel | sort | uniq) > packages.txt
+	comm -23 <(pacman -Qqen | sort) <({ pacman -Qqg base-devel; expac -l '%E' base; } | sort | uniq) > packages.txt
 
 .PHONY: crontab
 crontab:
