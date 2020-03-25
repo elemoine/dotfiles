@@ -1,7 +1,7 @@
 SHELL:=/bin/bash
 
 .PHONY: all
-all: submodule dotfiles pip virtualenv venv
+all: submodule dotfiles pip virtualenv vex venv
 
 .PHONY: submodule
 submodule:
