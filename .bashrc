@@ -66,6 +66,7 @@ if [ -n "$VIRTUAL_ENV" ]; then
 fi
 
 export PYTHONSTARTUP=${HOME}/.pythonrc.py
+export PIP_REQUIRE_VIRTUALENV=true
 export EDITOR=nvim
 
 export CDPATH=.:${HOME}/src

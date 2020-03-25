@@ -20,11 +20,11 @@ get-pip.py:
 
 .PHONY: virtualenv
 virtualenv:
-	$(HOME)/.local/bin/pip install --user --upgrade virtualenv
+	PIP_REQUIRE_VIRTUALENV=false $(HOME)/.local/bin/pip install --user --upgrade virtualenv
 
 .PHONY: vex
 vex:
-	$(HOME)/.local/bin/pip install --user --upgrade vex
+	PIP_REQUIRE_VIRTUALENV=false $(HOME)/.local/bin/pip install --user --upgrade vex
 
 .PHONY: venv
 venv: $(HOME)/.virtualenvs/main
