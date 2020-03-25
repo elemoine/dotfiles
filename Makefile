@@ -1,7 +1,7 @@
 SHELL:=/bin/bash
 
 .PHONY: all
-all: submodule dotfiles pip virtualenv virtualenvwrapper venv
+all: submodule dotfiles pip virtualenv venv
 
 .PHONY: submodule
 submodule:
@@ -25,10 +25,6 @@ virtualenv:
 .PHONY: vex
 vex:
 	$(HOME)/.local/bin/pip install --user --upgrade vex
-
-.PHONY: virtualenvwrapper
-virtualenvwrapper:
-	$(HOME)/.local/bin/pip install --user --upgrade virtualenvwrapper
 
 .PHONY: venv
 venv: $(HOME)/.virtualenvs/main
