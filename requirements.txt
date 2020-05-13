@@ -7,3 +7,4 @@ black
 pynvim
 isort
 docker-compose
+pip-tools
