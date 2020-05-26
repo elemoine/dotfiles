@@ -1,6 +1,7 @@
 accountsservice
 acpilight
 arandr
+aspell-en
 aspell-fr
 astyle
 autopep8
@@ -16,6 +17,7 @@ dmenu
 dmidecode
 docker
 dos2unix
+dpkg
 efibootmgr
 elinks
 evince
@@ -36,6 +38,7 @@ i3blocks
 i3-gaps
 i3lock
 i3status
+inetutils
 inotify-tools
 intel-ucode
 iw
@@ -59,6 +62,7 @@ nmap
 npm
 ntp
 odt2txt
+openconnect
 openresolv
 openssh
 p7zip
@@ -90,6 +94,7 @@ sane
 strace
 system-config-printer
 termite
+time
 tk
 tldr
 tmux
@@ -108,7 +113,6 @@ wget
 wpa_supplicant
 x11-ssh-askpass
 xautolock
-xbindkeys
 xf86-input-evdev
 xf86-input-synaptics
 xf86-video-vesa
