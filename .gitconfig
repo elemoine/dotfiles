@@ -42,7 +42,7 @@
     cp = cherry-pick
     ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
 [branch]
-    autosetupmerge = false
+    autosetupmerge = true
 [push]
 	default = nothing
 [grep]
