@@ -16,6 +16,7 @@
     ui = auto
 [merge]
 	tool = vimdiff
+	conflictstyle = diff3
 [alias]
     c = commit
     ca = commit --amend --no-edit
