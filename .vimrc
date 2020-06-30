@@ -148,7 +148,7 @@ map <Leader>cd :lcd %:h<CR>
 let g:sqlutil_align_comma=1
 
 " UI
-colorscheme torte
+colorscheme darkblue
 
 " status line
 " https://github.com/tpope/vim-fugitive
