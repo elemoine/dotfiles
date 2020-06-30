@@ -12,3 +12,5 @@ alias l='ls -l'
 alias vim='nvim'
 
 alias compose='docker-compose'
+
+alias dsp='docker system prune -f'
