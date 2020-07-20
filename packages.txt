@@ -58,9 +58,12 @@ linux-headers
 meld
 neovim
 net-tools
+nltk-data
 nmap
 npm
 ntp
+oath-toolkit
+octave
 odt2txt
 openconnect
 openresolv
@@ -113,6 +116,7 @@ wget
 wpa_supplicant
 x11-ssh-askpass
 xautolock
+xbindkeys
 xf86-input-evdev
 xf86-input-synaptics
 xf86-video-vesa
@@ -165,3 +169,4 @@ xorg-xwininfo
 xorg-xwud
 yarn
 zip
+zsh
