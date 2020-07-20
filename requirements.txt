@@ -8,3 +8,4 @@ pynvim
 isort
 docker-compose
 pip-tools
+totp
