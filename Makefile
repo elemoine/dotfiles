@@ -13,7 +13,7 @@ dotfiles:
 
 .PHONY: pip
 pip: get-pip.py
-	/usr/bin/python3 get-pip.py --user -I
+	PIP_REQUIRE_VIRTUALENV=false /usr/bin/python3 get-pip.py --user -I
 
 get-pip.py:
 	curl -O https://bootstrap.pypa.io/get-pip.py
