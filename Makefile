@@ -43,13 +43,22 @@ $(HOME)/.fzf/install:
 	rm -rf $(dir $@)
 	git clone --depth 1 https://github.com/junegunn/fzf.git $(dir $@)
 
-.PHONY: packages
-packages:
-	sudo pacman -S --needed $$(cat packages.txt)
+.PHONY: arch-packages
+arch-packages:
+	sudo pacman -S --needed $$(cat arch-packages.txt)
 
-.PHONY: packages-list
-packages-list:
-	comm -23 <(pacman -Qqen | sort) <({ pacman -Qqg base-devel; expac -l '%E' base; } | sort | uniq) > packages.txt
+.PHONY: arch-packages-list
+arch-packages-list:
+	comm -23 <(pacman -Qqen | sort) <({ pacman -Qqg base-devel; expac -l '%E' base; } | sort | uniq) > arch-packages.txt
+
+.PHONY: debian-packages
+debian-packages:
+	sudo dpkg --set-selections < debian-packages.txt
+	sudo apt-get dselect-upgrade
+
+.PHONY: debian-packages-list
+debian-packages-list:
+	dpkg --get-selections | grep -v deinstall | sort | uniq > debian-packages.txt
 
 .PHONY: crontab
 crontab:
