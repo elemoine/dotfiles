@@ -3,6 +3,7 @@ adduser						install
 adwaita-icon-theme				install
 alsa-topology-conf				install
 alsa-ucm-conf					install
+amd64-microcode					install
 anacron						install
 apparmor					install
 apt						install
@@ -17,6 +18,7 @@ automake					install
 autopoint					install
 autotools-dev					install
 avahi-autoipd					install
+avahi-daemon					install
 base-files					install
 base-passwd					install
 bash-completion					install
@@ -39,6 +41,7 @@ busybox						install
 bzip2						install
 ca-certificates					install
 ca-certificates-mono				install
+calendar					install
 cgroupfs-mount					install
 cli-common					install
 console-data					install
@@ -99,8 +102,13 @@ fdisk						install
 file						install
 findutils					install
 firefox-esr					install
+firmware-amd-graphics				install
 firmware-iwlwifi				install
 firmware-linux-free				install
+firmware-linux					install
+firmware-linux-nonfree				install
+firmware-misc-nonfree				install
+flameshot					install
 fontconfig-config				install
 fontconfig					install
 fonts-dejavu-core				install
@@ -111,11 +119,13 @@ fonts-noto-mono					install
 fonts-quicksand					install
 fonts-urw-base35				install
 fonts-vlgothic					install
+fuse						install
 g++-9						install
 gcc-10-base:amd64				install
 gcc-9-base:amd64				install
 gcc-9						install
 gcc						install
+geoclue-2.0					install
 gettext-base					install
 gettext						install
 g++						install
@@ -189,6 +199,7 @@ ibus						install
 icu-devtools					install
 ienglish-common					install
 ifupdown					install
+iio-sensor-proxy				install
 im-config					install
 init						install
 initramfs-tools-core				install
@@ -196,6 +207,7 @@ initramfs-tools					install
 init-system-helpers				install
 installation-report				install
 intel-media-va-driver:amd64			install
+intel-microcode					install
 intltool-debian					install
 intltool					install
 iproute2					install
@@ -204,6 +216,7 @@ iputils-ping					install
 isc-dhcp-common					install
 iso-codes					install
 ispell						install
+iucode-tool					install
 iw						install
 javascript-common				install
 kbd						install
@@ -252,6 +265,8 @@ libauthen-sasl-perl				install
 libavahi-client3:amd64				install
 libavahi-common3:amd64				install
 libavahi-common-data:amd64			install
+libavahi-core7:amd64				install
+libavahi-glib1:amd64				install
 libavcodec58:amd64				install
 libavresample4:amd64				install
 libavutil56:amd64				install
@@ -292,7 +307,6 @@ libcroco3:amd64					install
 libcrypt1:amd64					install
 libcrypt-dev:amd64				install
 libcryptsetup12:amd64				install
-libcryptsetup-dev:amd64				install
 libctf0:amd64					install
 libctf-nobfd0:amd64				install
 libcups2:amd64					install
@@ -317,6 +331,7 @@ libdiscover2					install
 libdjvulibre21:amd64				install
 libdjvulibre-text				install
 libdns-export1110				install
+libdouble-conversion3:amd64			install
 libdpkg-perl					install
 libdrm2:amd64					install
 libdrm-amdgpu1:amd64				install
@@ -448,6 +463,7 @@ libharfbuzz-dev:amd64				install
 libharfbuzz-gobject0:amd64			install
 libharfbuzz-icu0:amd64				install
 libhogweed5:amd64				install
+libhogweed6:amd64				install
 libhtml-format-perl				install
 libhtml-form-perl				install
 libhtml-parser-perl				install
@@ -459,6 +475,7 @@ libhttp-date-perl				install
 libhttp-message-perl				install
 libhttp-negotiate-perl				install
 libhunspell-1.7-0:amd64				install
+libhyphen0:amd64				install
 libibus-1.0-5:amd64				install
 libice6:amd64					install
 libice-dev:amd64				install
@@ -487,9 +504,11 @@ libiw30:amd64					install
 libjack-jackd2-0:amd64				install
 libjbig0:amd64					install
 libjbig2dec0:amd64				install
+libjim0.79:amd64				install
 libjpeg62-turbo:amd64				install
 libjs-jquery					install
 libjson-c4:amd64				install
+libjson-c5:amd64				install
 libjsoncpp1:amd64				install
 libjson-glib-1.0-0:amd64			install
 libjson-glib-1.0-common				install
@@ -528,7 +547,11 @@ libmagic-mgc					install
 libmail-sendmail-perl				install
 libmailtools-perl				install
 libmaxminddb0:amd64				install
+libmbim-glib4:amd64				install
+libmbim-proxy					install
+libmd4c0:amd64					install
 libmfx1:amd64					install
+libmm-glib0:amd64				install
 libmnl0:amd64					install
 libmodule-find-perl				install
 libmodule-scandeps-perl				install
@@ -560,6 +583,7 @@ libnet-http-perl				install
 libnet-smtp-ssl-perl				install
 libnet-ssleay-perl				install
 libnettle7:amd64				install
+libnettle8:amd64				install
 libnewt0.52:amd64				install
 libnfnetlink0:amd64				install
 libnftnl11:amd64				install
@@ -571,6 +595,7 @@ libnotify4:amd64				install
 libnpth0:amd64					install
 libnspr4:amd64					install
 libnss3:amd64					install
+libnss-mdns:amd64				install
 libnss-systemd:amd64				install
 libnuma1:amd64					install
 libogg0:amd64					install
@@ -623,6 +648,7 @@ libpolkit-gobject-1-0:amd64			install
 libpoppler82:amd64				install
 libpoppler-glib8:amd64				install
 libpopt0:amd64					install
+libpq5:amd64					install
 libproc-processtable-perl			install
 libprocps8:amd64				install
 libprotobuf-c1:amd64				install
@@ -636,11 +662,28 @@ libpython2.7-minimal:amd64			install
 libpython2.7-stdlib:amd64			install
 libpython2-stdlib:amd64				install
 libpython3.8:amd64				install
+libpython3.8-dev:amd64				install
 libpython3.8-minimal:amd64			install
 libpython3.8-stdlib:amd64			install
 libpython3-stdlib:amd64				install
 libpython-stdlib:amd64				install
+libqmi-glib5:amd64				install
+libqmi-proxy					install
 libqrencode4:amd64				install
+libqt5core5a:amd64				install
+libqt5dbus5:amd64				install
+libqt5gui5:amd64				install
+libqt5network5:amd64				install
+libqt5positioning5:amd64			install
+libqt5printsupport5:amd64			install
+libqt5qml5:amd64				install
+libqt5qmlmodels5:amd64				install
+libqt5quick5:amd64				install
+libqt5sensors5:amd64				install
+libqt5svg5:amd64				install
+libqt5webchannel5:amd64				install
+libqt5webkit5:amd64				install
+libqt5widgets5:amd64				install
 libquadmath0:amd64				install
 libreadline8:amd64				install
 librest-0.7-0:amd64				install
@@ -763,6 +806,7 @@ libwayland-server0:amd64			install
 libwebp6:amd64					install
 libwebpmux3:amd64				install
 libwebrtc-audio-processing1:amd64		install
+libwoff1:amd64					install
 libwrap0:amd64					install
 libwww-perl					install
 libwww-robotrules-perl				install
@@ -771,7 +815,7 @@ libx11-data					install
 libx11-dev:amd64				install
 libx11-protocol-perl				install
 libx11-xcb1:amd64				install
-libx264-159:amd64				install
+libx264-160:amd64				install
 libx265-192:amd64				install
 libxatracker2:amd64				install
 libxau6:amd64					install
@@ -798,6 +842,7 @@ libxcb-sync1:amd64				install
 libxcb-util0:amd64				install
 libxcb-xfixes0:amd64				install
 libxcb-xinerama0:amd64				install
+libxcb-xinput0:amd64				install
 libxcb-xkb1:amd64				install
 libxcb-xrm0:amd64				install
 libxcb-xtest0:amd64				install
@@ -858,8 +903,8 @@ libzvbi-common					install
 lightdm-gtk-greeter				install
 lightdm						install
 linux-base					install
-linux-image-5.6.0-2-amd64			install
 linux-image-5.7.0-1-amd64			install
+linux-image-5.7.0-2-amd64			install
 linux-image-amd64				install
 linux-libc-dev:amd64				install
 locales						install
@@ -879,7 +924,11 @@ mawk						install
 mesa-va-drivers:amd64				install
 mesa-vdpau-drivers:amd64			install
 mesa-vulkan-drivers:amd64			install
+mfecma						install
+mfedx						install
+mfert						install
 mime-support					install
+modemmanager					install
 mokutil						install
 mono-4.0-gac					install
 mono-gac					install
@@ -888,6 +937,7 @@ mono-runtime					install
 mono-runtime-sgen				install
 mount						install
 nano						install
+ncal						install
 ncurses-base					install
 ncurses-bin					install
 ncurses-term					install
@@ -923,9 +973,13 @@ pinentry-gtk2					install
 pkg-config					install
 plymouth					install
 plymouth-label					install
+pmount						install
 po-debconf					install
 policykit-1					install
 poppler-data					install
+postgresql-client-12				install
+postgresql-client-common			install
+postgresql-client				install
 powertop					install
 procps						install
 publicsuffix					install
@@ -935,6 +989,7 @@ python2.7					install
 python2.7-minimal				install
 python2						install
 python2-minimal					install
+python3.8-dev					install
 python3.8					install
 python3.8-minimal				install
 python3-apt					install
@@ -981,8 +1036,11 @@ python-apt-common				install
 python						install
 python-minimal					install
 qrencode					install
+qt5-gtk-platformtheme:amd64			install
+qttranslations5-l10n				install
 readline-common					install
 reportbug					install
+restic						install
 rsyslog						install
 rtkit						install
 runc						install
@@ -1024,6 +1082,8 @@ udev						install
 unattended-upgrades				install
 unzip						install
 usb.ids						install
+usb-modeswitch-data				install
+usb-modeswitch					install
 usbutils					install
 util-linux					install
 util-linux-locales				install
@@ -1070,7 +1130,9 @@ xorg-sgml-doctools				install
 xserver-common					install
 xserver-xorg-core				install
 xserver-xorg-input-all				install
+xserver-xorg-input-evdev			install
 xserver-xorg-input-libinput			install
+xserver-xorg-input-mouse			install
 xserver-xorg-input-wacom			install
 xserver-xorg					install
 xserver-xorg-legacy				install
