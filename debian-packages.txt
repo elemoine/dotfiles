@@ -293,6 +293,7 @@ libcap-ng0:amd64				install
 libc-bin					install
 libcbor0:amd64					install
 libcc1-0:amd64					install
+libccid						install
 libc-dev-bin					install
 libcdparanoia0:amd64				install
 libc-l10n					install
@@ -570,7 +571,6 @@ libmount1:amd64					install
 libmount-dev:amd64				install
 libmp3lame0:amd64				install
 libmpc3:amd64					install
-libmpdec2:amd64					install
 libmpfr6:amd64					install
 libmsgpackc2:amd64				install
 libmtdev1:amd64					install
@@ -759,6 +759,7 @@ libtsan0:amd64					install
 libtss2-esys0					install
 libtwolame0:amd64				install
 libtypes-serialiser-perl			install
+libu2f-udev					install
 libubsan1:amd64					install
 libuchardet0:amd64				install
 libudev1:amd64					install
@@ -896,6 +897,9 @@ libxxf86dga1:amd64				install
 libxxf86vm1:amd64				install
 libyajl2:amd64					install
 libyaml-0-2:amd64				install
+libykpers-1-1:amd64				install
+libyubikey0					install
+libyubikey-udev					install
 libz3-4:amd64					install
 libzstd1:amd64					install
 libzvbi0:amd64					install
@@ -903,7 +907,6 @@ libzvbi-common					install
 lightdm-gtk-greeter				install
 lightdm						install
 linux-base					install
-linux-image-5.7.0-1-amd64			install
 linux-image-5.7.0-2-amd64			install
 linux-image-amd64				install
 linux-libc-dev:amd64				install
@@ -964,6 +967,7 @@ patch						install
 pavucontrol					install
 pci.ids						install
 pciutils					install
+pcscd						install
 perl-base					install
 perl						install
 perl-modules-5.30				install
@@ -996,13 +1000,18 @@ python3-apt					install
 python3-asn1crypto				install
 python3-bs4					install
 python3-certifi					install
+python3-cffi-backend				install
 python3-chardet					install
+python3-click					install
+python3-colorama				install
+python3-cryptography				install
 python3-dbus					install
 python3-debconf					install
 python3-debianbts				install
 python3-debian					install
 python3-distro-info				install
 python3-distutils				install
+python3-fido2					install
 python3-gi					install
 python3-greenlet				install
 python3-html5lib				install
@@ -1020,18 +1029,22 @@ python3-minimal					install
 python3-msgpack					install
 python3-neovim					install
 python3-netifaces				install
+python3-openssl					install
 python3-pkg-resources				install
 python3-pycurl					install
 python3-pygments				install
 python3-pynvim					install
+python3-pyscard					install
 python3-pysimplesoap				install
 python3-reportbug				install
 python3-requests				install
 python3-six					install
 python3-soupsieve				install
 python3-urllib3					install
+python3-usb					install
 python3-webencodings				install
 python3-yaml					install
+python3-yubikey-manager				install
 python-apt-common				install
 python						install
 python-minimal					install
@@ -1046,6 +1059,7 @@ rtkit						install
 runc						install
 runit-helper					install
 rxvt-unicode					install
+scdaemon					install
 sed						install
 sensible-utils					install
 sgml-base					install
@@ -1150,6 +1164,7 @@ xsltproc					install
 xtrans-dev					install
 xxd						install
 xz-utils					install
+yubikey-manager					install
 zlib1g:amd64					install
 zlib1g-dev:amd64				install
 zoom						install
