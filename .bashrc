@@ -22,11 +22,17 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
-# Create symlink ~/.ssh/ssh_auth_sock to the ssh-agent socket. This is
+# if an ssh session start the ssh agent
+if [[ -n $SSH_CLIENT ]]; then
+    mkdir -p /tmp/ssh-$USER
+    pkill -u $USER ssh-agent
+    eval $(ssh-agent -s -a /tmp/ssh-$USER/ssh-agent.socket)
+fi
+
+# create symlink ~/.ssh/ssh_auth_sock to the ssh-agent socket. This is
 # used for tmux sessions.
 #
-# See these links for more information:
-#
+# see these links for more information:
 # https://gist.github.com/bcomnes/e756624dc1d126ba2eb6
 # http://techblog.appnexus.com/2011/managing-ssh-sockets-in-gnu-screen/
 # https://gist.github.com/martijnvermaat/8070533

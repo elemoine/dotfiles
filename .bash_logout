@@ -6,3 +6,7 @@ if [ "$SHLVL" = 1 ]; then
 fi
 
 rm -f ~/.gnupg/S.gpg-agent
+
+if [[ -n $SSH_CLIENT && -n $SSH_AGENT_PID ]]; then
+    kill $SSH_AGENT_PID
+fi
