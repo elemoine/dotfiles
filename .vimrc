@@ -21,6 +21,7 @@ Plug 'fabi1cazenave/suckless.vim'
 Plug 'ambv/black'
 Plug 'scy/vim-timesheet'
 Plug 'fisadev/vim-isort'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " change my <leader> key

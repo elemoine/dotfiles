@@ -5,3 +5,5 @@ source ~/.vimrc
 
 " https://neovim.io/doc/user/provider.html#provider-python
 let g:python3_host_prog = '~/.virtualenvs/main/bin/python'
+
+source $HOME/.config/nvim/plug-config/coc.vim
