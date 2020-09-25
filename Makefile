@@ -5,7 +5,7 @@ all: submodule dotfiles pip virtualenv vex venv
 
 .PHONY: submodule
 submodule:
-	git submodule update --init
+	git submodule update --init --recursive
 
 .PHONY: dotfiles
 dotfiles:
