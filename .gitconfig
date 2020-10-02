@@ -3,7 +3,7 @@
     attributesfile = "~/.gitattributes"
 [user]
     name = Éric Lemoine
-    email = eric_lemoine@ultimatesoftware.com
+    email = eric.lemoine@ukg.com
     signingkey = FFC64DBB96F156D2!
 [commit]
     gpgsign = true
