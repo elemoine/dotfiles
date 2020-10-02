@@ -19,6 +19,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'ambv/black'
 Plug 'scy/vim-timesheet'
 Plug 'fisadev/vim-isort'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " change my <leader> key
