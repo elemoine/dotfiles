@@ -15,6 +15,7 @@
 :Cligs	twitvim.txt	/*:Cligs*
 :DMSentTwitter	twitvim.txt	/*:DMSentTwitter*
 :DMTwitter	twitvim.txt	/*:DMTwitter*
+:EditorConfigReload	editorconfig.txt	/*:EditorConfigReload*
 :ForwardTwitter	twitvim.txt	/*:ForwardTwitter*
 :FriendsTwitter	twitvim.txt	/*:FriendsTwitter*
 :IsGd	twitvim.txt	/*:IsGd*
@@ -52,6 +53,7 @@
 :UrlBorg	twitvim.txt	/*:UrlBorg*
 :UserTwitter	twitvim.txt	/*:UserTwitter*
 :Zima	twitvim.txt	/*:Zima*
+EditorConfig#AddNewHook()	editorconfig.txt	/*EditorConfig#AddNewHook()*
 TwitVim	twitvim.txt	/*TwitVim*
 TwitVim-A-d	twitvim.txt	/*TwitVim-A-d*
 TwitVim-A-g	twitvim.txt	/*TwitVim-A-g*
@@ -108,6 +110,18 @@ TwitVim-timeline-commands	twitvim.txt	/*TwitVim-timeline-commands*
 TwitVim-tips	twitvim.txt	/*TwitVim-tips*
 TwitVim-update-commands	twitvim.txt	/*TwitVim-update-commands*
 TwitVim-utility	twitvim.txt	/*TwitVim-utility*
+editorconfig-advanced	editorconfig.txt	/*editorconfig-advanced*
+editorconfig-commands	editorconfig.txt	/*editorconfig-commands*
+editorconfig-contents	editorconfig.txt	/*editorconfig-contents*
+editorconfig-hook	editorconfig.txt	/*editorconfig-hook*
+editorconfig-installation	editorconfig.txt	/*editorconfig-installation*
+editorconfig-overview	editorconfig.txt	/*editorconfig-overview*
+editorconfig-settings	editorconfig.txt	/*editorconfig-settings*
+editorconfig.txt	editorconfig.txt	/*editorconfig.txt*
+g:EditorConfig_core_mode	editorconfig.txt	/*g:EditorConfig_core_mode*
+g:EditorConfig_exec_path	editorconfig.txt	/*g:EditorConfig_exec_path*
+g:EditorConfig_python_files_dir	editorconfig.txt	/*g:EditorConfig_python_files_dir*
+g:EditorConfig_verbose	editorconfig.txt	/*g:EditorConfig_verbose*
 hl-twitterLink	twitvim.txt	/*hl-twitterLink*
 hl-twitterReply	twitvim.txt	/*hl-twitterReply*
 hl-twitterTime	twitvim.txt	/*hl-twitterTime*
