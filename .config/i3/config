@@ -108,9 +108,8 @@ bindsym $mod+minus scratchpad show
 
 set $ws1 "1: term"
 set $ws2 "2: www"
-set $ws3 "3: mail"
-set $ws4 "4: chat"
-set $ws5 "5: phone"
+set $ws3 "3: chat"
+set $ws4 "4: phone"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -216,15 +215,27 @@ mode "$mode_launch" {
     bindsym Return mode "default"
 }
 
-# Start a terminal on workspace 1
-exec --no-startup-id i3-msg 'workspace $ws1; exec termite; exec sleep 3'
+# Put workspaces on specific screens
+workspace "1: term" output HDMI-1 eDP-1
+workspace "2: www" output HDMI-1 eDP-1
+workspace "3: chat" output eDP-1
+workspace "4: phone" output eDP-1
 
-# Start Firefox on workspace 2
-exec --no-startup-id i3-msg 'workspace $ws2; exec firefox; exec sleep 3'
+# Put applications on specific workspaces
+assign [class="Termite"] "1: term"
+assign [class="Firefox-esr"] "2: www"
+assign [class="Slack"] "3: chat"
+assign [class="Element"] "3: chat"
+assign [class="Microsoft Teams - Preview"] "4: phone"
+assign [class="zoom"] "4: phone"
 
-# Start hexchat and slack on workspace 4
-exec --no-startup-id i3-msg 'workspace $ws4; exec hexchat; exec sleep 3'
-exec --no-startup-id i3-msg 'workspace $ws4; exec slack; exec sleep 3'
+# Start applications
+exec --no-startup-id i3-msg 'exec termite'
+exec --no-startup-id i3-msg 'exec firefox'
+exec --no-startup-id i3-msg 'exec element-desktop'
+exec --no-startup-id i3-msg 'exec slack'
+exec --no-startup-id i3-msg 'exec teams'
+exec --no-startup-id i3-msg 'exec zoom'
 
 # Display worskpace 1 at startup
 exec --no-startup-id i3-msg 'workspace $ws1'
