@@ -1,4 +1,5 @@
 alias g=git
+alias k=kubectl
 
 alias tl='tmux list-sessions'
 alias tn='tmux new-session -s'
