@@ -95,6 +95,7 @@ dhcpcd5						install
 dh-strip-nondeterminism				install
 dictionaries-common				install
 diffutils					install
+direnv						install
 dirmngr						install
 discover-data					install
 discover					install
@@ -440,6 +441,7 @@ libfile-listing-perl				install
 libfile-mimeinfo-perl				install
 libfile-stripnondeterminism-perl		install
 libflac8:amd64					install
+libfmt7:amd64					install
 libfont-afm-perl				install
 libfontconfig1:amd64				install
 libfontconfig1-dev:amd64			install
@@ -839,6 +841,7 @@ libsort-naturally-perl				install
 libsoup2.4-1:amd64				install
 libsoup-gnome2.4-1:amd64			install
 libsoxr0:amd64					install
+libspdlog1:amd64				install
 libspectre1:amd64				install
 libspeex1:amd64					install
 libspeexdsp1:amd64				install
