@@ -73,3 +73,6 @@
 [submodule ".vim/bundle/jedi-vim"]
 	path = .vim/bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule ".vim/bundle/Jenkinsfile-vim-syntax"]
+	path = .vim/bundle/Jenkinsfile-vim-syntax
+	url = https://github.com/martinda/Jenkinsfile-vim-syntax.git
