@@ -250,6 +250,7 @@ init						install
 initramfs-tools-core				install
 initramfs-tools					install
 init-system-helpers				install
+insomnia					install
 installation-report				install
 intel-media-va-driver:amd64			install
 intel-microcode					install
@@ -462,6 +463,7 @@ libgcc-10-dev:amd64				install
 libgcc-9-dev:amd64				install
 libgcc-s1:amd64					install
 libgcrypt20:amd64				install
+libgcrypt20-dev					install
 libgd3:amd64					install
 libgdbm6:amd64					install
 libgdbm-compat4:amd64				install
@@ -509,6 +511,7 @@ libgnutls-openssl27:amd64			install
 libgnutlsxx28:amd64				install
 libgomp1:amd64					install
 libgpg-error0:amd64				install
+libgpg-error-dev				install
 libgphoto2-6:amd64				install
 libgphoto2-l10n					install
 libgphoto2-port12:amd64				install
@@ -699,7 +702,10 @@ libnpth0:amd64					install
 libnsl2:amd64					install
 libnsl-dev:amd64				install
 libnspr4:amd64					install
+libnspr4-dev					install
 libnss3:amd64					install
+libnss3-dev:amd64				install
+libnss-docker:amd64				install
 libnss-mdns:amd64				install
 libnss-nis:amd64				install
 libnss-nisplus:amd64				install
@@ -1012,8 +1018,15 @@ libxkbfile1:amd64				install
 libxkbregistry0:amd64				install
 libxklavier16:amd64				install
 libxml2:amd64					install
+libxml2-dev:amd64				install
 libxml2-utils					install
 libxml-parser-perl:amd64			install
+libxmlsec1:amd64				install
+libxmlsec1-dev					install
+libxmlsec1-gcrypt:amd64				install
+libxmlsec1-gnutls:amd64				install
+libxmlsec1-nss:amd64				install
+libxmlsec1-openssl:amd64			install
 libxml-twig-perl				install
 libxml-xpathengine-perl				install
 libxmu6:amd64					install
@@ -1025,6 +1038,7 @@ libxrender1:amd64				install
 libxrender-dev:amd64				install
 libxshmfence1:amd64				install
 libxslt1.1:amd64				install
+libxslt1-dev:amd64				install
 libxss1:amd64					install
 libxss-dev:amd64				install
 libxt6:amd64					install
@@ -1258,6 +1272,8 @@ strongswan-starter				install
 strongswan-swanctl				install
 suckless-tools					install
 sudo						install
+swig4.0						install
+swig						install
 sysstat						install
 system-config-printer-common			install
 system-config-printer				install
@@ -1347,6 +1363,7 @@ xfonts-unifont					install
 xfonts-utils					install
 xkb-data					install
 xml-core					install
+xmlsec1						install
 xorg-sgml-doctools				install
 xserver-common					install
 xserver-xorg-core				install
