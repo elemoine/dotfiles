@@ -93,6 +93,9 @@ export FZF_DEFAULT_OPTS='
 --color info:108,prompt:109,spinner:108,pointer:168,marker:168
 '
 
+# direnv
+eval "$(direnv hook bash)"
+
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
