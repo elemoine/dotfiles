@@ -1,7 +1,7 @@
 SHELL:=/bin/bash
 
 .PHONY: all
-all: submodule dotfiles pip virtualenv vex venv
+all: submodule dotfiles pip virtualenv vex poetry venv
 
 .PHONY: submodule
 submodule:
@@ -25,6 +25,10 @@ virtualenv:
 .PHONY: vex
 vex:
 	PIP_REQUIRE_VIRTUALENV=false $(HOME)/.local/bin/pip install --user --upgrade vex
+
+.PHONY: poetry
+poetry:
+	PIP_REQUIRE_VIRTUALENV=false $(HOME)/.local/bin/pip install --user --upgrade poetry
 
 .PHONY: venv
 venv: $(HOME)/.virtualenvs/main
