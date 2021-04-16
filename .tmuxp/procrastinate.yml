@@ -1,0 +1,26 @@
+session_name: procrastinate
+windows:
+- window_name: git
+  panes:
+  - shell_command:
+    - cd ~/src/procrastinate
+    - vex main
+    - docker-compose up -d postgres
+    - git status
+- window_name: edit
+  panes:
+  - shell_command:
+    - cd ~/src/procrastinate
+    - vex main
+    - vim
+- window_name: venv
+  panes:
+  - shell_command:
+    - cd ~/src/procrastinate
+    - vex procrastinate
+- window_name: psql
+  panes:
+  - shell_command:
+    - cd ~/src/procrastinate
+    - sleep 5
+    - psql
