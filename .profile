@@ -1,3 +1,3 @@
 source ${HOME}/.bashrc
 
-export PATH=${HOME}/.local/bin:${HOME}/scripts:${PATH}
+export PATH=${HOME}/.local/bin:${HOME}/scripts:${HOME}/soft/google-cloud-sdk/bin:${PATH}
