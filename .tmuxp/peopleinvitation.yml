@@ -1,0 +1,19 @@
+session_name: peopleinvitation
+windows:
+- window_name: git
+  panes:
+  - shell_command:
+    - cd ~/src/peopleinvitation
+    - vex main
+    - git status
+- window_name: edit
+  panes:
+  - shell_command:
+    - cd ~/src/peopleinvitation
+    - vex main
+    - vim
+- window_name: venv
+  panes:
+  - shell_command:
+    - cd ~/src/peopleinvitation
+    - vex peopleinvitation
