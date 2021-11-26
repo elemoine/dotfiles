@@ -38,8 +38,6 @@
     pf = push --force
     l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     co = checkout
-    pr = pull-request
-    rv = review
     cp = cherry-pick
     ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
 [branch]
