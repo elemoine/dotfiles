@@ -18,6 +18,8 @@ def create_symlink(dotname, directory=""):
 
 
 exclude = [
+    "arch-packages.txt",
+    "debian-packages.txt",
     "*.sw*",
     ".git",
     "*.un~",
@@ -41,7 +43,5 @@ for e in os.scandir("."):
 
 for configdir in (".config", ".ssh", ".gnupg"):
     for e in os.scandir(configdir):
-        if e.is_dir():
-            continue
         if not any(fnmatch.fnmatch(e.name, p) for p in exclude):
             create_symlink(e.name, configdir)
