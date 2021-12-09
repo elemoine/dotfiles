@@ -236,6 +236,7 @@ exec --no-startup-id i3-msg 'exec slack'
 exec --no-startup-id i3-msg 'exec blueman-applet'
 exec --no-startup-id i3-msg 'exec flameshot'
 exec --no-startup-id i3-msg 'exec 1password'
+exec --no-startup-id i3-msg 'exec pasystray'
 
 # Display worskpace 1 at startup
 exec --no-startup-id i3-msg 'workspace $ws1'
