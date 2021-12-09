@@ -109,7 +109,7 @@ bindsym $mod+minus scratchpad show
 set $ws1 "1: term"
 set $ws2 "2: www"
 set $ws3 "3: chat"
-set $ws4 "4: 1password"
+set $ws4 "4: pass"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -219,14 +219,14 @@ mode "$mode_launch" {
 workspace "1: term" output HDMI-1 eDP-1
 workspace "2: www" output HDMI-1 eDP-1
 workspace "3: chat" output eDP-1
-workspace "4: 1password" output eDP-1
+workspace "4: pass" output eDP-1
 
 # Put applications on specific workspaces
-assign [class="Termite"] "1: term"
-assign [class="Firefox-esr"] "2: www"
+assign [class="Alacritty"] "1: term"
+assign [class="firefox"] "2: www"
 assign [class="Slack"] "3: chat"
 assign [class="Element"] "3: chat"
-assign [class="1Password"] "4: 1password"
+assign [class="1Password"] "4: pass"
 
 # Start applications
 exec --no-startup-id i3-msg 'exec alacritty'
@@ -235,6 +235,7 @@ exec --no-startup-id i3-msg 'exec element-desktop'
 exec --no-startup-id i3-msg 'exec slack'
 exec --no-startup-id i3-msg 'exec blueman-applet'
 exec --no-startup-id i3-msg 'exec flameshot'
+exec --no-startup-id i3-msg 'exec 1password'
 
 # Display worskpace 1 at startup
 exec --no-startup-id i3-msg 'workspace $ws1'
