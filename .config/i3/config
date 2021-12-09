@@ -216,8 +216,8 @@ mode "$mode_launch" {
 }
 
 # Put workspaces on specific screens
-workspace "1: term" output HDMI-1 eDP-1
-workspace "2: www" output HDMI-1 eDP-1
+workspace "1: term" output HDMI-1 DP-1-8 eDP-1
+workspace "2: www" output HDMI-1 DP-1-8 eDP-1
 workspace "3: chat" output eDP-1
 workspace "4: pass" output eDP-1
 
