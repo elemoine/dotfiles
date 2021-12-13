@@ -107,3 +107,11 @@ fi
 if [ -f /etc/profile.d/autojump.bash ]; then
     source /etc/profile.d/autojump.bash
 fi
+
+# gcloud
+if [ -f ~/soft/google-cloud-sdk/path.bash.inc ]; then
+    . /home/elemoine/soft/google-cloud-sdk/path.bash.inc
+fi
+if [ -f ~/soft/google-cloud-sdk/completion.bash.inc ]; then
+    . ~/soft/google-cloud-sdk/completion.bash.inc
+fi
