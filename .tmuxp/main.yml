@@ -12,3 +12,14 @@ windows:
     - cd ~/src/main
     - vex main
     - vim
+- window_name: test
+  panes:
+  - shell_command:
+    - cd ~/src/main
+    - vex main
+    - make testshell
+- window_name: stack
+  panes:
+  - shell_command:
+    - cd ~/src/main
+    - vex main
