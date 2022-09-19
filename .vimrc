@@ -16,11 +16,12 @@ filetype plugin indent on
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
-Plug 'ambv/black'
+Plug 'psf/black', { 'branch': 'stable' }
 Plug 'scy/vim-timesheet'
 Plug 'fisadev/vim-isort'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'joshdick/onedark.vim', { 'branch': 'main' }
 call plug#end()
 
 " change my <leader> key
@@ -148,7 +149,7 @@ map <Leader>cd :lcd %:h<CR>
 let g:sqlutil_align_comma=1
 
 " UI
-colorscheme darkblue
+colorscheme onedark
 
 " status line
 " https://github.com/tpope/vim-fugitive
