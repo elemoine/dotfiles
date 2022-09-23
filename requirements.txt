@@ -7,6 +7,6 @@ vim_bridge
 black
 pynvim
 isort
-docker-compose
 pip-tools
 totp
+importlib-metadata

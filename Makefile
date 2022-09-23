@@ -1,5 +1,8 @@
 SHELL:=/bin/bash
 
+DOCKER_COMPOSE_VERSION:=v2.11.1
+DOCKER_COMPOSE_URL:=https://github.com/docker/compose/releases/download/$(DOCKER_COMPOSE_VERSION)/docker-compose-linux-x86_64
+
 .PHONY: all
 all: submodule dotfiles pip virtualenv vex poetry pipx pre-commit venv
 
@@ -44,6 +47,14 @@ venv: $(HOME)/.virtualenvs/main
 
 $(HOME)/.virtualenvs/main:
 	$(HOME)/.local/bin/virtualenv $@
+
+.PHONY: docker-compose
+docker-compose: $(HOME)/.docker/cli-plugins/docker-compose
+
+$(HOME)/.docker/cli-plugins/docker-compose:
+	@mkdir -p $(dir $@)
+	@curl -SL $(DOCKER_COMPOSE_URL) --output $@
+	@chmod +x $@
 
 .PHONY: fzf
 fzf: $(HOME)/.fzf/bin/fzf
