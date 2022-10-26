@@ -25,6 +25,7 @@
     a = add
     s = status
     rh = reset --hard
+    rhu = reset --hard @{upstream}
     f = fetch --prune
     m = merge
     mf = merge --ff-only
