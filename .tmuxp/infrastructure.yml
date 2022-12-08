@@ -1,0 +1,20 @@
+session_name: infrastructure
+windows:
+- window_name: git
+  panes:
+  - shell_command:
+    - cd ~/src/infrastructure
+    - vex main
+    - git status
+- window_name: edit
+  panes:
+  - shell_command:
+    - cd ~/src/infrastructure
+    - vex main
+    - vim
+- window_name: shell
+  panes:
+  - shell_command:
+    - cd ~/src/infrastructure
+    - vex main
+    - make shell

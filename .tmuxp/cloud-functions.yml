@@ -1,0 +1,19 @@
+session_name: cloud-functions
+windows:
+- window_name: git
+  panes:
+  - shell_command:
+    - cd ~/src/cloud-functions
+    - vex main
+    - git status
+- window_name: edit
+  panes:
+  - shell_command:
+    - cd ~/src/cloud-functions
+    - vex main
+    - vim
+- window_name: test
+  panes:
+  - shell_command:
+    - cd ~/src/cloud-functions
+    - vex main
