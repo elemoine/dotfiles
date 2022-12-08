@@ -4,7 +4,7 @@ DOCKER_COMPOSE_VERSION:=v2.11.1
 DOCKER_COMPOSE_URL:=https://github.com/docker/compose/releases/download/$(DOCKER_COMPOSE_VERSION)/docker-compose-linux-x86_64
 
 .PHONY: all
-all: submodule dotfiles pip virtualenv vex poetry pipx pre-commit venv
+all: submodule dotfiles virtualenv vex poetry pipx pre-commit venv
 
 .PHONY: submodule
 submodule:
@@ -12,38 +12,31 @@ submodule:
 
 .PHONY: dotfiles
 dotfiles:
-	/usr/bin/python3 install-dotfiles.py
-
-.PHONY: pip
-pip: get-pip.py
-	PIP_REQUIRE_VIRTUALENV=false /usr/bin/python3 get-pip.py --user -I
-
-get-pip.py:
-	curl -O https://bootstrap.pypa.io/get-pip.py
+	python3 install-dotfiles.py
 
 .PHONY: virtualenv
 virtualenv:
-	PIP_REQUIRE_VIRTUALENV=false $(HOME)/.local/bin/pip install --user --upgrade virtualenv
+	PIP_REQUIRE_VIRTUALENV=false python3 -m pip install --user --upgrade virtualenv
 
 .PHONY: vex
 vex:
-	PIP_REQUIRE_VIRTUALENV=false $(HOME)/.local/bin/pip install --user --upgrade vex
+	PIP_REQUIRE_VIRTUALENV=false python3 -m pip install --user --upgrade vex
 
 .PHONY: poetry
 poetry:
-	PIP_REQUIRE_VIRTUALENV=false $(HOME)/.local/bin/pip install --user --upgrade poetry
+	PIP_REQUIRE_VIRTUALENV=false python3 -m pip install --user --upgrade poetry
 
 .PHONY: pipx
 pipx:
-	PIP_REQUIRE_VIRTUALENV=false $(HOME)/.local/bin/pip install --user --upgrade pipx
+	PIP_REQUIRE_VIRTUALENV=false python3 -m pip install --user --upgrade pipx
 
 .PHONY: pre-commit
 pre-commit:
-	PIP_REQUIRE_VIRTUALENV=false $(HOME)/.local/bin/pip install --user --upgrade pre-commit
+	PIP_REQUIRE_VIRTUALENV=false python3 -m pip install --user --upgrade pre-commit
 
 .PHONY: venv
 venv: $(HOME)/.virtualenvs/main
-	$(HOME)/.virtualenvs/main/bin/pip install -r requirements.txt
+	$(HOME)/.virtualenvs/main/bin/python -m pip install -r requirements.txt
 
 $(HOME)/.virtualenvs/main:
 	$(HOME)/.local/bin/virtualenv $@
