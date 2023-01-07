@@ -22,6 +22,7 @@ Plug 'fisadev/vim-isort'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'joshdick/onedark.vim', { 'branch': 'main' }
+Plug 'dense-analysis/ale'
 call plug#end()
 
 " change my <leader> key
@@ -187,3 +188,14 @@ noremap <Space> <C-D>
 
 " Markdown mappings
 au FileType markdown inoremap <buffer> <Leader>sl <!SLIDE><Esc>FEa
+
+" ALE
+let g:ale_linters = {
+\   'python': ['flake8'],
+\}
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'python': ['black', 'isort'],
+\}
+let g:ale_fix_on_save = 1
+let g:ale_completion_enabled = 1
