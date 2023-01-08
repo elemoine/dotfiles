@@ -24,6 +24,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'joshdick/onedark.vim', { 'branch': 'main' }
 Plug 'dense-analysis/ale'
 Plug 'neovim/nvim-lspconfig'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 " change my <leader> key
