@@ -11,3 +11,4 @@ totp
 tox
 vim_bridge
 httpx
+python-lsp-server[pycodestyle,autopep8]

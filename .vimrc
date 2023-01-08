@@ -23,6 +23,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'joshdick/onedark.vim', { 'branch': 'main' }
 Plug 'dense-analysis/ale'
+Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 " change my <leader> key
@@ -198,4 +199,6 @@ let g:ale_fixers = {
 \   'python': ['black', 'isort'],
 \}
 let g:ale_fix_on_save = 1
-let g:ale_completion_enabled = 1
+let g:ale_completion_enabled = 0
+
+" See .config/nvim/init.vim for LSP related config
