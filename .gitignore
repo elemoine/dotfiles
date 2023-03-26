@@ -4,3 +4,4 @@
 *.pyc
 vimrc
 get-pip.py
+.ropeproject

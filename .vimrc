@@ -25,6 +25,7 @@ Plug 'joshdick/onedark.vim', { 'branch': 'main' }
 Plug 'dense-analysis/ale'
 Plug 'neovim/nvim-lspconfig'
 Plug 'itchyny/lightline.vim'
+Plug 'python-rope/ropevim'
 call plug#end()
 
 " change my <leader> key
@@ -193,7 +194,7 @@ au FileType markdown inoremap <buffer> <Leader>sl <!SLIDE><Esc>FEa
 
 " ALE
 let g:ale_linters = {
-\   'python': ['flake8'],
+\   'python': ['flake8', 'pyright'],
 \}
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
