@@ -194,7 +194,7 @@ au FileType markdown inoremap <buffer> <Leader>sl <!SLIDE><Esc>FEa
 
 " ALE
 let g:ale_linters = {
-\   'python': ['flake8', 'pyright'],
+\   'python': ['flake8', 'pyright', 'ruff'],
 \}
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
