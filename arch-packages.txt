@@ -17,7 +17,6 @@ bogofilter
 cronie
 cups
 dhcpcd
-dia
 dillo
 direnv
 dmenu
@@ -83,7 +82,6 @@ pipewire-pulse
 postgis
 postgresql
 python
-python2
 python-docker
 python-gobject
 python-jinja

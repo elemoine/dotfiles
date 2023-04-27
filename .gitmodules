@@ -48,7 +48,7 @@
 	url = https://github.com/vim-scripts/SQLUtilities
 [submodule ".vim/bundle/Align"]
 	path = .vim/bundle/Align
-	url = https://github.com/vim-scripts/Align
+    url = https://github.com/vim-scripts/Align
 [submodule ".vim/bundle/editorconfig-vim"]
 	path = .vim/bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
