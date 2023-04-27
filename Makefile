@@ -34,6 +34,10 @@ pipx:
 pre-commit:
 	PIP_REQUIRE_VIRTUALENV=false python3 -m pip install --user --upgrade pre-commit
 
+.PHONY: tmuxp
+tmuxp:
+	PIP_REQUIRE_VIRTUALENV=false python3 -m pip install --user --upgrade tmuxp
+
 .PHONY: venv
 venv: $(HOME)/.virtualenvs/main
 	$(HOME)/.virtualenvs/main/bin/python -m pip install -r requirements.txt
