@@ -26,6 +26,7 @@ Plug 'dense-analysis/ale'
 Plug 'neovim/nvim-lspconfig'
 Plug 'itchyny/lightline.vim'
 Plug 'python-rope/ropevim'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 " change my <leader> key
