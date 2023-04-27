@@ -17,7 +17,7 @@ windows:
   - shell_command:
     - cd ~/src/main
     - vex main
-    - make testshell
+    - task tests:shell
 - window_name: stack
   panes:
   - shell_command:
