@@ -38,6 +38,7 @@ fzf
 gimp
 git
 git-crypt
+github-cli
 gnu-netcat
 grub
 hexchat
@@ -110,7 +111,6 @@ time
 tk
 tldr
 tmux
-tmuxp
 traceroute
 transmission-cli
 ttf-bitstream-vera
