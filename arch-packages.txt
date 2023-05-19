@@ -34,7 +34,9 @@ exfat-utils
 expac
 firefox
 flameshot
+fwupd
 fzf
+gcc
 gimp
 git
 git-crypt
@@ -117,6 +119,7 @@ ttf-bitstream-vera
 unzip
 wget
 which
+wireshark-cli
 wpa_supplicant
 x11-ssh-askpass
 xautolock
