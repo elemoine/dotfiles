@@ -118,10 +118,6 @@ nmap <F2> :YRShow<CR>
 " https://github.com/vim-scripts/pep8
 let g:pep8_map='<F3>'
 
-" https://github.com/nvie/vim-flake8
-autocmd BufWritePost *.py call Flake8()
-"let g:flake8_ignore="E501,W293"
-
 " taken from the https://github.com/tpope/vim-fugitive README
 autocmd QuickFixCmdPost *grep* cwindow
 
@@ -196,11 +192,11 @@ au FileType markdown inoremap <buffer> <Leader>sl <!SLIDE><Esc>FEa
 
 " ALE
 let g:ale_linters = {
-\   'python': ['flake8', 'pyright', 'ruff'],
+\   'python': ['pyright', 'ruff'],
 \}
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'python': ['black', 'isort'],
+\   'python': ['black', 'ruff'],
 \}
 nmap <Leader>f :ALEFix<CR>
 let g:ale_fix_on_save = 1

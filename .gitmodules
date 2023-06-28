@@ -22,9 +22,6 @@
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular
-[submodule ".vim/bundle/flake8"]
-	path = .vim/bundle/flake8
-	url = https://github.com/nvie/vim-flake8
 [submodule ".vim/bundle/abolish"]
 	path = .vim/bundle/abolish
 	url = https://github.com/tpope/vim-abolish
