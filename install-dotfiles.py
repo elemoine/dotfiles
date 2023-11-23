@@ -35,6 +35,7 @@ exclude = [
     "packages.txt",
     "config",
     "crontab",
+    "nvchad",
 ]
 
 for e in os.scandir("."):
@@ -45,3 +46,11 @@ for configdir in (".config", ".ssh", ".gnupg"):
     for e in os.scandir(configdir):
         if not any(fnmatch.fnmatch(e.name, p) for p in exclude):
             create_symlink(e.name, configdir)
+
+# special case for nvchad
+# create symlink ~/.config/nvim/lua/custom -> nvchad/custom
+dst = os.path.join(os.path.expanduser("~"), ".config/nvim/lua/custom")
+if os.path.islink(dst):
+    os.unlink(dst)
+print("create link for %s" % dst)
+os.symlink(os.path.abspath("nvchad/custom"), dst)
