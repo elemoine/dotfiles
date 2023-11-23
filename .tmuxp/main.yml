@@ -10,7 +10,7 @@ windows:
   panes:
   - shell_command:
     - cd ~/src/main
-    - vex main
+    - vex alma-main
     - vim
 - window_name: test
   panes:
