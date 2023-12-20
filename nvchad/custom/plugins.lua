@@ -20,7 +20,7 @@ local plugins = {
   },
   {
     "tpope/vim-fugitive",
-    cmd = "Git",
+    cmd = {"Git", "Gbrowse"},
     dependencies = {
       "tpope/vim-rhubarb"
     }
@@ -39,6 +39,10 @@ local plugins = {
       { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
       { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
     },
+  },
+  {
+    "jlanzarotta/bufexplorer",
+    lazy = false,
   }
 }
 return plugins
