@@ -115,3 +115,7 @@ fi
 if [ -f ~/soft/google-cloud-sdk/completion.bash.inc ]; then
     . ~/soft/google-cloud-sdk/completion.bash.inc
 fi
+
+# pyenv
+export PYENV_ROOT="${HOME}/.pyenv"
+export PYENV_SHELL=bash
