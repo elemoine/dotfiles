@@ -20,7 +20,7 @@ local plugins = {
   },
   {
     "tpope/vim-fugitive",
-    cmd = {"Git", "Gbrowse"},
+    cmd = {"Git", "GBrowse"},
     dependencies = {
       "tpope/vim-rhubarb"
     }
