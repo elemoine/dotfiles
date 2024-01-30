@@ -43,6 +43,10 @@ local plugins = {
   {
     "jlanzarotta/bufexplorer",
     lazy = false,
-  }
+  },
+  {
+    "github/copilot.vim",
+    cmd = {"Copilot"}
+  },
 }
 return plugins
