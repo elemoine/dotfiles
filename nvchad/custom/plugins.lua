@@ -46,7 +46,10 @@ local plugins = {
   },
   {
     "github/copilot.vim",
-    cmd = {"Copilot"}
+    cmd = {"Copilot"},
+    config = function()
+      require "custom.configs.copilot"
+    end,
   },
 }
 return plugins
