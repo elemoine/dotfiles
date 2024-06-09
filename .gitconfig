@@ -4,7 +4,7 @@
 [user]
     name = Éric Lemoine
     email = eric.lemoine@getalma.eu
-    signingkey = FFC64DBB96F156D2
+    signingkey = D03D413297A13AE8
 [commit]
     gpgsign = true
 [tag]
