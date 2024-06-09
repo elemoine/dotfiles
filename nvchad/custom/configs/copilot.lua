@@ -5,3 +5,4 @@ vim.keymap.set('i', '<C-c>', 'copilot#Accept("\\<CR>")', {
 })
 vim.keymap.set('i', '<C-w>', '<Plug>(copilot-accept-word)')
 vim.keymap.set('i', '<C-l>', '<Plug>(copilot-accept-line)')
+vim.keymap.set('i', '<C-f>', '<Plug>(copilot-next)')
