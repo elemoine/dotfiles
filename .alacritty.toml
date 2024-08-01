@@ -1,5 +1,9 @@
+[shell]
+program = "/bin/bash"
+args = ["--login"]
+
 [font]
-size = 8.0
+size = 12
 
 [font.bold]
 family = "JetBrainsMonoNL Nerd Font"
