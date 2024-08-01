@@ -41,7 +41,7 @@ if [[ -S $SSH_AUTH_SOCK && ! -h $SSH_AUTH_SOCK ]]; then
     ln -sf $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock
 fi
 
-if [ "$TERM" != "dumb" ]; then
+if which dircolors 2> /dev/null && [[ "$TERM" != "dumb" ]]; then
     eval "`dircolors -b`"
     alias ls='ls --color=auto'
 fi
@@ -94,7 +94,12 @@ export FZF_DEFAULT_OPTS='
 '
 
 # direnv
-eval "$(direnv hook bash)"
+which direnv
+if [ $? -eq 0 ]; then
+    eval "$(direnv hook bash)"
+else
+    eval "$(/opt/homebrew/bin/direnv hook bash)"
+fi
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -110,7 +115,7 @@ fi
 
 # gcloud
 if [ -f ~/soft/google-cloud-sdk/path.bash.inc ]; then
-    . /home/elemoine/soft/google-cloud-sdk/path.bash.inc
+    . ~/soft/google-cloud-sdk/path.bash.inc
 fi
 if [ -f ~/soft/google-cloud-sdk/completion.bash.inc ]; then
     . ~/soft/google-cloud-sdk/completion.bash.inc
