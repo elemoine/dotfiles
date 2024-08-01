@@ -36,6 +36,7 @@ exclude = [
     "config",
     "crontab",
     "nvchad",
+    "Brewfile",
 ]
 
 for e in os.scandir("."):
