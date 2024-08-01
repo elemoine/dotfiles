@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 brew "direnv"
 brew "git"
+brew "gnupg"
 brew "make"
 brew "neovim"
 brew "tmux"
