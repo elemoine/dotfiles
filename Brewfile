@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 brew "direnv"
+brew "fzf"
 brew "git"
 brew "gnupg"
 brew "make"
