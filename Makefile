@@ -4,7 +4,7 @@ DOCKER_COMPOSE_VERSION:=v2.11.1
 DOCKER_COMPOSE_URL:=https://github.com/docker/compose/releases/download/$(DOCKER_COMPOSE_VERSION)/docker-compose-linux-x86_64
 
 .PHONY: all
-all: submodule dotfiles virtualenv vex poetry pipx pre-commit venv
+all: submodule dotfiles venv
 
 .PHONY: submodule
 submodule:
@@ -14,36 +14,13 @@ submodule:
 dotfiles:
 	python3 install-dotfiles.py
 
-.PHONY: virtualenv
-virtualenv:
-	PIP_REQUIRE_VIRTUALENV=false python3 -m pip install --user --upgrade virtualenv
-
-.PHONY: vex
-vex:
-	PIP_REQUIRE_VIRTUALENV=false python3 -m pip install --user --upgrade vex
-
-.PHONY: poetry
-poetry:
-	PIP_REQUIRE_VIRTUALENV=false python3 -m pip install --user --upgrade poetry
-
-.PHONY: pipx
-pipx:
-	PIP_REQUIRE_VIRTUALENV=false python3 -m pip install --user --upgrade pipx
-
-.PHONY: pre-commit
-pre-commit:
-	PIP_REQUIRE_VIRTUALENV=false python3 -m pip install --user --upgrade pre-commit
-
-.PHONY: tmuxp
-tmuxp:
-	PIP_REQUIRE_VIRTUALENV=false python3 -m pip install --user --upgrade tmuxp
-
 .PHONY: venv
 venv: $(HOME)/.virtualenvs/main
 	$(HOME)/.virtualenvs/main/bin/python -m pip install -r requirements.txt
 
 $(HOME)/.virtualenvs/main:
-	$(HOME)/.local/bin/virtualenv $@
+	mkdir -p $(HOME)/.virtualenvs
+	python3 -m venv $@
 
 .PHONY: docker-compose
 docker-compose: $(HOME)/.docker/cli-plugins/docker-compose
@@ -79,6 +56,10 @@ debian-packages:
 .PHONY: debian-packages-list
 debian-packages-list:
 	dpkg --get-selections | grep -v deinstall | sort | uniq > debian-packages.txt
+
+.PHONY: brewfile
+brewfile:
+	brew bundle dump -f
 
 .PHONY: crontab
 crontab:
