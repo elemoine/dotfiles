@@ -4,7 +4,7 @@ windows:
   panes:
   - shell_command:
     - cd ~/src/main
-    - source ~/.virtualenv/main/bin/activate
+    - source ~/.virtualenvs/main/bin/activate
     - git status
 - window_name: edit
   panes:
@@ -15,10 +15,10 @@ windows:
   panes:
   - shell_command:
     - cd ~/src/main
-    - source ~/.virtualenv/main/bin/activate
+    - source ~/.virtualenvs/main/bin/activate
     - task tests:shell
 - window_name: stack
   panes:
   - shell_command:
     - cd ~/src/main
-    - source ~/.virtualenv/main/bin/activate
+    - source ~/.virtualenvs/main/bin/activate
