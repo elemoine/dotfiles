@@ -10,6 +10,7 @@ windows:
   panes:
   - shell_command:
     - cd ~/src/main
+    - source ~/.virtualenvs/alma-main/bin/activate
     - vim
 - window_name: test
   panes:
