@@ -71,6 +71,16 @@ if [ -n "$VIRTUAL_ENV" ]; then
     PS1="($(basename $VIRTUAL_ENV)) $PS1"
 fi
 
+# direnv
+# https://github.com/direnv/direnv/wiki/Python#restoring-the-ps1
+show_virtual_env() {
+  if [[ -n "$VIRTUAL_ENV" && -n "$DIRENV_DIR" ]]; then
+    echo "($(basename $VIRTUAL_ENV))"
+  fi
+}
+export -f show_virtual_env
+PS1='$(show_virtual_env)'$PS1
+
 export PYTHONSTARTUP=${HOME}/.pythonrc.py
 export PIP_REQUIRE_VIRTUALENV=true
 export EDITOR=nvim

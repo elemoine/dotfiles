@@ -4,22 +4,18 @@ windows:
   panes:
   - shell_command:
     - cd ~/src/main
-    - source ~/.virtualenvs/main/bin/activate
     - git status
 - window_name: edit
   panes:
   - shell_command:
     - cd ~/src/main
-    - source ~/.virtualenvs/alma-main/bin/activate
     - vim
 - window_name: test
   panes:
   - shell_command:
     - cd ~/src/main
-    - source ~/.virtualenvs/main/bin/activate
     - task tests:shell
 - window_name: stack
   panes:
   - shell_command:
     - cd ~/src/main
-    - source ~/.virtualenvs/main/bin/activate
