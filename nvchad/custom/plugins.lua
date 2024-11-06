@@ -4,10 +4,13 @@ local plugins = {
     opts = {
       ensure_installed = {
         "black",
+        "eslint-lsp",
         "mypy",
+        "prettier",
         "pyright",
         "ruff",
         "ruff-lsp",
+        "typescript-language-server",
       }
     }
   },
