@@ -24,3 +24,6 @@ lspconfig.ruff.setup{
     }
   }
 }
+
+lspconfig.ts_ls.setup{}
+lspconfig.eslint.setup{}
