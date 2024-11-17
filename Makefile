@@ -61,6 +61,10 @@ debian-packages-list:
 brewfile:
 	brew bundle dump -f
 
+.PHONY: brew
+brew:
+	brew bundle install --file Brewfile
+
 .PHONY: crontab
 crontab:
 	crontab crontab
