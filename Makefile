@@ -65,6 +65,11 @@ brewfile:
 brew:
 	brew bundle install --file Brewfile
 
+# See https://bepo.fr/wiki/Utilisateur:Balise
+.PHONY: yubikey-bepo
+yubikey-bepo:
+	ykpersonalize -S 0b140c0938363707130512330f0d16188b948c89b8b6b787938592b38f8d9698a79e9fa0a1a2a3a4a5a69c2b28
+
 .PHONY: crontab
 crontab:
 	crontab crontab
