@@ -36,7 +36,7 @@
     ra = rebase --abort
     d = diff
     p = push
-    pf = push --force
+    pf = push --force-with-lease
     l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     co = checkout
     cp = cherry-pick
