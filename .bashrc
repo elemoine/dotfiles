@@ -65,12 +65,6 @@ xterm*|screen*)
 esac
 
 
-# vex
-# https://github.com/sashahart/vex
-if [ -n "$VIRTUAL_ENV" ]; then
-    PS1="($(basename $VIRTUAL_ENV)) $PS1"
-fi
-
 # direnv
 # https://github.com/direnv/direnv/wiki/Python#restoring-the-ps1
 show_virtual_env() {
