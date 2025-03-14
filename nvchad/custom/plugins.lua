@@ -54,5 +54,16 @@ local plugins = {
       require "custom.configs.copilot"
     end,
   },
+  -- https://github.com/CopilotC-Nvim/CopilotChat.nvim
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    dependencies = {
+      { "github/copilot.vim" },
+      { "nvim-lua/plenary.nvim", branch = "master" },
+    },
+    build = "make tiktoken",
+    opts = {
+    },
+  },
 }
 return plugins
