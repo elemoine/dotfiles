@@ -1,0 +1,16 @@
+session_name: ai
+windows:
+- window_name: ollama
+  panes:
+  - shell_command:
+    - cd ~
+    - ollama serve
+- window_name: open-webui
+  panes:
+  - shell_command:
+    - cd ~
+    - docker run --rm -p 7000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main
+- window_name: command
+  panes:
+  - shell_command:
+    - cd ~
