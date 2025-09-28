@@ -8,3 +8,5 @@ vim.api.nvim_set_option("clipboard", "unnamedplus")
 
 vim.opt.textwidth = 80
 vim.opt.colorcolumn = "88"
+
+vim.opt.winbar = "%=%m %f"
