@@ -6,8 +6,8 @@
 # - https://wiki.archlinux.org/index.php/Color_Bash_Prompt
 #
 if [[ $- != *i* ]]; then
-    # Running non-interactively, don't do anything
-    return
+  # Running non-interactively, don't do anything
+  return
 fi
 
 echo "Sourcing ${HOME}/.bashrc..."
@@ -24,9 +24,9 @@ shopt -s checkwinsize
 
 # if an ssh session start the ssh agent
 if [[ -n $SSH_CLIENT ]]; then
-    mkdir -p /tmp/ssh-$USER
-    pkill -u $USER ssh-agent
-    eval $(ssh-agent -s -a /tmp/ssh-$USER/ssh-agent.socket)
+  mkdir -p /tmp/ssh-$USER
+  pkill -u $USER ssh-agent
+  eval $(ssh-agent -s -a /tmp/ssh-$USER/ssh-agent.socket)
 fi
 
 # create symlink ~/.ssh/ssh_auth_sock to the ssh-agent socket. This is
@@ -37,13 +37,13 @@ fi
 # http://techblog.appnexus.com/2011/managing-ssh-sockets-in-gnu-screen/
 # https://gist.github.com/martijnvermaat/8070533
 # http://stackoverflow.com/questions/21378569/how-to-auto-update-ssh-agent-environment-variables-when-attaching-to-existing-tm
-if [[ -S $SSH_AUTH_SOCK && ! -h $SSH_AUTH_SOCK ]]; then
-    ln -sf $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock
+if [[ -S $SSH_AUTH_SOCK && ! -L $SSH_AUTH_SOCK ]]; then
+  ln -sf $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock
 fi
 
-if which dircolors 2> /dev/null && [[ "$TERM" != "dumb" ]]; then
-    eval "`dircolors -b`"
-    alias ls='ls --color=auto'
+if which dircolors 2>/dev/null && [[ "$TERM" != "dumb" ]]; then
+  eval "$(dircolors -b)"
+  alias ls='ls --color=auto'
 fi
 
 source ${HOME}/.git-completion.bash
@@ -56,14 +56,13 @@ GIT_PS1_SHOWUPSTREAM="verbose"
 
 # set prompt
 case "$TERM" in
-xterm*|screen*)
-    PS1='[\u@\h \[\033[1;35m\]\W$(__git_ps1 " \[\033[1;34m\](%s)")\[\033[0m\]]\$ '
-    ;;
+xterm* | screen*)
+  PS1='[\u@\h \[\033[1;35m\]\W$(__git_ps1 " \[\033[1;34m\](%s)")\[\033[0m\]]\$ '
+  ;;
 *)
-    PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-    ;;
+  PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+  ;;
 esac
-
 
 # direnv
 # https://github.com/direnv/direnv/wiki/Python#restoring-the-ps1
@@ -100,31 +99,36 @@ export FZF_DEFAULT_OPTS='
 # direnv
 which direnv
 if [ $? -eq 0 ]; then
-    eval "$(direnv hook bash)"
+  eval "$(direnv hook bash)"
 else
-    eval "$(/opt/homebrew/bin/direnv hook bash)"
+  eval "$(/opt/homebrew/bin/direnv hook bash)"
 fi
 
 if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+  . ~/.bash_aliases
 fi
 
 if [ -f ~/.bash_functions ]; then
-    . ~/.bash_functions
+  . ~/.bash_functions
 fi
 
 if [ -f /etc/profile.d/autojump.bash ]; then
-    source /etc/profile.d/autojump.bash
+  source /etc/profile.d/autojump.bash
 fi
 
 # gcloud
 if [ -f ~/soft/google-cloud-sdk/path.bash.inc ]; then
-    . ~/soft/google-cloud-sdk/path.bash.inc
+  . ~/soft/google-cloud-sdk/path.bash.inc
 fi
 if [ -f ~/soft/google-cloud-sdk/completion.bash.inc ]; then
-    . ~/soft/google-cloud-sdk/completion.bash.inc
+  . ~/soft/google-cloud-sdk/completion.bash.inc
 fi
 
 # pyenv
 export PYENV_ROOT="${HOME}/.pyenv"
 export PYENV_SHELL=bash
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"                                       # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
