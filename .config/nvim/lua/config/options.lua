@@ -10,3 +10,6 @@ vim.opt.textwidth = 80
 vim.opt.colorcolumn = "88"
 
 vim.opt.winbar = "%=%m %f"
+
+vim.g.lazyvim_python_lsp = "pyright"
+vim.g.lazyvim_python_ruff = "ruff"
