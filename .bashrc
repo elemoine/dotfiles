@@ -136,3 +136,4 @@ export NVM_DIR="$HOME/.nvm"
 # bash-completion@2
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 [[ -r "/opt/homebrew/etc/bash_completion.d/000_bash_completion_compat.bash" ]] && . "/opt/homebrew/etc/bash_completion.d/000_bash_completion_compat.bash"
+_split_longopt() { _comp__split_longopt "$@"; }
