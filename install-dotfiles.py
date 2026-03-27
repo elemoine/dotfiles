@@ -29,6 +29,7 @@ exclude = [
     "build",
     "requirements.txt",
     ".config",
+    ".claude",
     "get-pip.py",
     ".ssh",
     ".gnupg",
@@ -43,7 +44,7 @@ for e in os.scandir("."):
     if not any(fnmatch.fnmatch(e.name, p) for p in exclude):
         create_symlink(e.name)
 
-for configdir in (".config", ".ssh", ".gnupg"):
+for configdir in (".config", ".ssh", ".gnupg", ".claude"):
     for e in os.scandir(configdir):
         if not any(fnmatch.fnmatch(e.name, p) for p in exclude):
             create_symlink(e.name, configdir)
