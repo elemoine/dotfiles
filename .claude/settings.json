@@ -1,0 +1,20 @@
+{
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "terminal-notifier -title 'Claude Code' -message 'Claude Code needs your attention'"
+          }
+        ]
+      }
+    ]
+  },
+  "voiceEnabled": true,
+  "autoDreamEnabled": true,
+  "enabledPlugins": {
+    "skill-creator@claude-plugins-official": true
+  }
+}
