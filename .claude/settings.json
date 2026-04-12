@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "terminal-notifier -title 'Claude Code' -message 'Claude Code needs your attention'"
+            "command": "terminal-notifier -title 'Claude Code' -message 'Claude Code needs your attention' -sound Pop"
           }
         ]
       }
@@ -16,6 +16,10 @@
     "skill-creator@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": true
   },
+  "language": "French",
+  "autoUpdatesChannel": "stable",
+  "minimumVersion": "2.1.85",
   "voiceEnabled": true,
-  "autoDreamEnabled": true
+  "autoDreamEnabled": true,
+  "model": "sonnet"
 }
