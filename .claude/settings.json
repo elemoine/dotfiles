@@ -16,10 +16,9 @@
     "skill-creator@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": true
   },
-  "language": "French",
+  "language": "Français",
   "autoUpdatesChannel": "stable",
   "minimumVersion": "2.1.85",
-  "voiceEnabled": true,
   "autoDreamEnabled": true,
-  "model": "sonnet"
+  "voiceEnabled": true
 }
