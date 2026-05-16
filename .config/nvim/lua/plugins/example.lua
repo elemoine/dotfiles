@@ -70,8 +70,6 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
-        -- ty will be automatically installed with mason and loaded with lspconfig
-        ty = {},
         pyright = {
           mason = false,
           autostart = false,
