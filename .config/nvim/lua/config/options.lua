@@ -4,12 +4,14 @@
 
 vim.g.mapleader = ","
 
-vim.api.nvim_set_option("clipboard", "unnamedplus")
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.textwidth = 80
 vim.opt.colorcolumn = "88"
 
 vim.opt.winbar = "%=%m %f"
 
-vim.g.lazyvim_python_lsp = "pyflight"
+vim.g.lazyvim_python_lsp = "ty"
 vim.g.lazyvim_python_ruff = "ruff"
+
+vim.o.statusline = "😄 " .. (vim.o.statusline or "")
