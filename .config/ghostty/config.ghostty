@@ -1,3 +1,5 @@
-link-url = true
+fflink-url = true
 link-previews = true
 copy-on-select = true
+keybind = cmd+left=previous_tab
+keybind = cmd+right=next_tab
