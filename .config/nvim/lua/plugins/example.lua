@@ -74,6 +74,17 @@ return {
           mason = false,
           autostart = false,
         },
+        ty = {
+          diagnosticMode = "openFilesOnly",
+          completions = {
+            autoImport = true,
+            completeFunctionParentheses = true,
+          },
+          inlayHints = {
+            variableTypes = true, -- Shows implied types for variables (e.g., `x: int = 5`)
+            callArgumentNames = true, -- Displays keyword parameter names at function callsites (e.g., `func(name: "Gemini")`)
+          },
+        },
       },
     },
   },
@@ -187,13 +198,17 @@ return {
   -- add any tools you want to have installed below
   {
     "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        "flake8",
-      },
-    },
+    opts = function(_, opts)
+      opts.ensure_installed = opts.ensure_installed or {}
+      table.insert(opts.ensure_installed, "ty")
+    end,
+  },
+
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = function(_, opts)
+      opts.ensure_installed = opts.ensure_installed or {}
+      table.insert(opts.ensure_installed, "ty")
+    end,
   },
 }
