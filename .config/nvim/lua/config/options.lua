@@ -14,4 +14,8 @@ vim.opt.winbar = "%=%m %f"
 vim.g.lazyvim_python_lsp = "ty"
 vim.g.lazyvim_python_ruff = "ruff"
 
-vim.o.statusline = "😄 " .. (vim.o.statusline or "")
+vim.keymap.set("n", "<leader>fy", function()
+  local relative_path = vim.fn.expand("%:.")
+  vim.fn.setreg("+", relative_path)
+  print("Copied path: " .. relative_path)
+end, { desc = "Copy file path to clipboard" })
