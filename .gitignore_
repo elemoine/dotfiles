@@ -3,3 +3,5 @@
 .vim/.netrwhist
 vimrc
 .envrc
+
+**/.claude/settings.local.json

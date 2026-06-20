@@ -16,10 +16,8 @@
     "skill-creator@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": true
   },
-  "language": "Français",
-  "autoUpdatesChannel": "stable",
-  "minimumVersion": "2.1.85",
+  "language": "English",
   "autoDreamEnabled": true,
-  "voiceEnabled": true,
-  "theme": "dark-daltonized"
+  "theme": "dark-daltonized",
+  "voiceEnabled": true
 }
